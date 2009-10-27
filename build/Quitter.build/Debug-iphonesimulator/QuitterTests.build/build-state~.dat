@@ -1,0 +1,85 @@
+TQuitterTests
+v7
+r1
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk
+c000000004AD9C51D00000000000000EE
+t1255785757
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/Developer/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingKit.h
+c000000004ABDD14700000000000007E1
+t1253953863
+s2017
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004ABDEE1D0000000000000788
+t1253961245
+s1928
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/SmokeTests.h
+c000000004AE1F63F000000000000038F
+t1256322623
+s911
+i<SenTestingKit/SenTestingKit.h>
+i<UIKit/UIKit.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/SmokeTests.m
+c000000004AE1F6AB0000000000000308
+t1256322731
+s776
+i"SmokeTests.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/QuitterTests.octest
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/QuitterTests.octest.dSYM
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/QuitterTests.octest/Info.plist
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/QuitterTests.octest/QuitterTests
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/QuitterTests.build/Objects-normal/i386/QuitterTests.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/QuitterTests.build/Objects-normal/i386/SmokeTests.o
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/QuitterTests.build/Script-7C10751710922C9B009F948C.sh
+c00000000000000000000000000000000
+t2
+s0
+
+NQuitterTests-Info.plist
+c000000004AE1F51B0000000000000281
+t1256322331
+s641
+
+CCompileC build/Quitter.build/Debug-iphonesimulator/QuitterTests.build/Objects-normal/i386/SmokeTests.o "/Users/jchilders/Documents/XCode Projects/Quitter/SmokeTests.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CGenerateDSYMFile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/QuitterTests.octest.dSYM" "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/QuitterTests.octest/QuitterTests"
+r0
+
+CLd "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/QuitterTests.octest/QuitterTests" normal i386
+r0
+
+CPhaseScriptExecution "Run Script" "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/QuitterTests.build/Script-7C10751710922C9B009F948C.sh"
+r0
+
+CProcessInfoPlistFile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/QuitterTests.octest/Info.plist" QuitterTests-Info.plist
+r0
+
+CTouch "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/QuitterTests.octest"
+r0
+

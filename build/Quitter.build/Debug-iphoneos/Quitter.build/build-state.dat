@@ -1,0 +1,197 @@
+TQuitter
+v7
+r1
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk
+c000000004ABFDAFE0000000000000110
+t1254087422
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/ResourceRules.plist
+c000000004ABDB88400000000000001E5
+t1253947524
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004ABDBA1300000000005F4900
+t1253947923
+s6244608
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004ABDBDCF0000000000501370
+t1253948879
+s5247856
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004ABDBDA40000000000001355
+t1253948836
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004ABDD0D10000000000000788
+t1253953745
+s1928
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004ABDD2250000000001B3F450
+t1253954085
+s28570704
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.h
+c000000004AE0CC0600000000000001E2
+t1256246278
+s482
+i<UIKit/UIKit.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m
+c000000004AE0CC06000000000000026D
+t1256246278
+s621
+i"QuitterAppDelegate.h"
+i"QuitterViewController.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.h
+c000000004AE0DE9A000000000000025B
+t1256251034
+s603
+i<UIKit/UIKit.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m
+c000000004AE0DECA0000000000000632
+t1256251082
+s1586
+i"QuitterViewController.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.h
+c000000004AE1F3B6000000000000019C
+t1256321974
+s412
+i<Foundation/Foundation.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m
+c000000004AE1F45F00000000000001EC
+t1256322143
+s492
+i"Smoke.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/MainWindow.xib
+c000000004AE0CC06000000000000244E
+t1256246278
+s9294
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/QuitterViewController.xib
+c000000004AE0CC0600000000000018DB
+t1256246278
+s6363
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter_Prefix.pch
+c000000004AE0CC0600000000000000B7
+t1256246278
+s183
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app.dSYM
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app/Info.plist
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app/MainWindow.nib
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app/PkgInfo
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app/Quitter
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app/QuitterViewController.nib
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app/ResourceRules.plist
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphoneos/Quitter.build/Objects-normal/armv6/Quitter.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphoneos/Quitter.build/Objects-normal/armv6/QuitterAppDelegate.o
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphoneos/Quitter.build/Objects-normal/armv6/QuitterViewController.o
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphoneos/Quitter.build/Objects-normal/armv6/Smoke.o
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphoneos/Quitter.build/Objects-normal/armv6/main.o
+t2
+s0
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/main.m
+c000000004AE0CC06000000000000016C
+t1256246278
+s364
+i<UIKit/UIKit.h>
+
+N/var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fiasonzqroytjvbqdevfjevamdso/Quitter_Prefix.pch.gch
+t2
+s0
+
+NQuitter-Info.plist
+c000000004AE0CC06000000000000038D
+t1256246278
+s909
+
+CCompileC build/Quitter.build/Debug-iphoneos/Quitter.build/Objects-normal/armv6/QuitterAppDelegate.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Quitter.build/Debug-iphoneos/Quitter.build/Objects-normal/armv6/QuitterViewController.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Quitter.build/Debug-iphoneos/Quitter.build/Objects-normal/armv6/Smoke.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/Quitter.build/Debug-iphoneos/Quitter.build/Objects-normal/armv6/main.o "/Users/jchilders/Documents/XCode Projects/Quitter/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/MainWindow.xib"
+r0
+
+CCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/QuitterViewController.xib"
+r0
+
+CCpResource build/Debug-iphoneos/Quitter.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.2.sdk/ResourceRules.plist
+r0
+
+CGenerateDSYMFile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app.dSYM" "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app/Quitter"
+r0
+
+CLd "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app/Quitter" normal armv6
+r0
+
+CProcessInfoPlistFile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app/Info.plist" Quitter-Info.plist
+r0
+
+CProcessPCH /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fiasonzqroytjvbqdevfjevamdso/Quitter_Prefix.pch.gch Quitter_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphoneos/Quitter.app"
+r0
+
