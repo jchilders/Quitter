@@ -17,7 +17,7 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
-		7C762A9112D1394100B39FE6 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C762A9012D1394100B39FE6 /* Smoke.m */; };
+		7C60CCB912D1599600EDD218 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60CCB812D1599600EDD218 /* Smoke.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Quitter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quitter_Prefix.pch; sourceTree = "<group>"; };
-		7C762A8F12D1394100B39FE6 /* Smoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smoke.h; sourceTree = "<group>"; };
-		7C762A9012D1394100B39FE6 /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smoke.m; sourceTree = "<group>"; };
+		7C60CCB712D1599600EDD218 /* Smoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Smoke.h; path = Classes/Smoke.h; sourceTree = "<group>"; };
+		7C60CCB812D1599600EDD218 /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Smoke.m; path = Classes/Smoke.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Quitter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quitter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,13 +94,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				7CEC9E2D12D1519E0036C824 /* Data */,
+				7CE539B912D158E600B744A8 /* Data */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				7CEC9E2F12D153560036C824 /* Tests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -137,20 +136,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7CEC9E2D12D1519E0036C824 /* Data */ = {
+		7CE539B912D158E600B744A8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				7C762A8F12D1394100B39FE6 /* Smoke.h */,
-				7C762A9012D1394100B39FE6 /* Smoke.m */,
+				7C60CCB712D1599600EDD218 /* Smoke.h */,
+				7C60CCB812D1599600EDD218 /* Smoke.m */,
 			);
 			name = Data;
-			sourceTree = "<group>";
-		};
-		7CEC9E2F12D153560036C824 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +212,7 @@
 				1D3623260D0F684500981E51 /* QuitterAppDelegate.m in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
-				7C762A9112D1394100B39FE6 /* Smoke.m in Sources */,
+				7C60CCB912D1599600EDD218 /* Smoke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
