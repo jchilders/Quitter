@@ -13,25 +13,68 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
-	[self setNumSmokedToday:15];
-	
-	[self showNumSmokedToday];
+
+	NSDate *today = [NSDate date];
+	[self setUsingDate:today];
+	[self setSmokesArray:[self getSmokesFor:[self usingDate]]];
+
+	[self snowNumSmoked];
 	[self showMotivationMessage];
+	
+	NSDate *yesterday = [today dateByAddingTimeInterval:-86400.0];
+	NSArray *smokesYestArray = [self getSmokesFor:yesterday];
+	NSLog(@"# of smokes yesterday: %d", [smokesYestArray count]);
 }
 
-- (void)showNumSmokedToday
+- (int)numSmoked
+{
+	return [smokesArray count];
+}
+
+- (void)snowNumSmoked
 {
 	NSLog(@"showNumSmokedToday called");
-//	NSString *str = [NSString stringWithFormat:@"%d", [self numSmokedToday]];
-	NSString *str = [NSString stringWithFormat:@"%d", [smokesArray count]];
+	NSString *str = [NSString stringWithFormat:@"%d", [self numSmoked]];
 	[numSmokedLabel setText:str];
+}
+
+- (NSArray *)getSmokesFor:(NSDate *)date
+{
+	NSCalendar *cal = [NSCalendar currentCalendar];
+	NSDateComponents *comp = [cal components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit 
+									fromDate:date];
+	NSDateComponents *oneDay = [[NSDateComponents alloc] init];
+	oneDay.day = 1;
+	
+	// from & to
+	NSDate *fromDate = [cal dateFromComponents:comp]; // Today at midnight
+	NSDate *toDate = [cal dateByAddingComponents:oneDay toDate:fromDate options:0]; // Tomorrow at midnight
+	
+	// CoreData expressions 
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(timestamp >= %@) and (timestamp <= %@)", fromDate, toDate];
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:[NSEntityDescription entityForName:@"Smoke" inManagedObjectContext:managedObjectContext]];
+	[request setPredicate:predicate];
+	
+	// Sort descending by timestamp
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timestamp" ascending:NO];
+	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	[request setSortDescriptors:sortDescriptors];	
+	
+	NSError *error = nil;
+	NSMutableArray *results = [[managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
+	
+	[sortDescriptors release];
+	[sortDescriptor release];
+	[oneDay release];
+	
+	return results;
 }
 
 - (void)showMotivationMessage
 {
 	NSString *msg;
-	if ([self numSmokedToday] < 10) {
+	if ([smokesArray count] < 10) {
 		msg = @"You are doing better today.";
 	} else {
 		msg = @"You've had more today than yesterday.";
@@ -42,6 +85,7 @@
 
 - (void)addSmoke
 {
+	NSLog(@"addSmoke called");
 	Smoke *smoke = (Smoke *)[NSEntityDescription insertNewObjectForEntityForName:@"Smoke"
 														  inManagedObjectContext:managedObjectContext];
 	
@@ -52,16 +96,15 @@
 		// Handle the error.
 		NSLog(@"An error occured saving this Smoke.");
 	}
-	
-	NSLog(@"Smokes array before count: %d", [smokesArray count]);
-	[smokesArray insertObject:smoke atIndex:0];
-	NSLog(@"Smokes array after count: %d", [smokesArray count]);
+
+	[smokesArray addObject:smoke];
 }
 
 - (IBAction)addAndShow:(id)sender
 {
 	[self addSmoke];
-	[self showNumSmokedToday];
+	[self snowNumSmoked];
+	[self showMotivationMessage];
 }
 
 - (void)subtractSmoke
@@ -70,15 +113,26 @@
 		return;
 	}
 	
+	// Delete the managed object at the given index path.
+	NSManagedObject *smokeToDelete = [smokesArray lastObject];
+	[managedObjectContext deleteObject:smokeToDelete];
+	
 	[smokesArray removeLastObject];
 
-	[self showNumSmokedToday];
+	// Commit the change.
+	NSError *error = nil;
+	if (![managedObjectContext save:&error]) {
+		NSLog(@"Error deleting Smoke.");
+	}
+	
+	[self snowNumSmoked];
 }
 
 - (IBAction)subtractAndShow:(id)sender
 {
 	[self subtractSmoke];
-	[self showNumSmokedToday];
+	[self snowNumSmoked];
+	[self showMotivationMessage];
 }
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
@@ -126,7 +180,7 @@
     [super dealloc];
 }
 
-@synthesize numSmokedToday;
+@synthesize usingDate;
 @synthesize smokesArray;
 @synthesize managedObjectContext;
 

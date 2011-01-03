@@ -44,6 +44,9 @@
 		7C68423212D16BC6008C0628 /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smoke.m; sourceTree = "<group>"; };
 		7C68424412D16CB9008C0628 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7C68425812D16F2D008C0628 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7CC9995212D2726E0007F22A /* Unit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Tests-Info.plist"; sourceTree = "<group>"; };
+		7CC9996212D273550007F22A /* MainViewControllerTestCases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewControllerTestCases.h; sourceTree = "<group>"; };
+		7CC9996312D273550007F22A /* MainViewControllerTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerTestCases.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Quitter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quitter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +105,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				7CC9994012D271810007F22A /* Tests */,
 				7CE539B912D158E600B744A8 /* Data */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
@@ -110,6 +114,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				7CC9995212D2726E0007F22A /* Unit Tests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -147,6 +152,15 @@
 				288765580DF743DE002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CC9994012D271810007F22A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7CC9996212D273550007F22A /* MainViewControllerTestCases.h */,
+				7CC9996312D273550007F22A /* MainViewControllerTestCases.m */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		7CE539B912D158E600B744A8 /* Data */ = {
