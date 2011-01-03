@@ -1,227 +1,399 @@
 TQuitter
 v7
 r0
-t278295832.905831
+t315708542.106384
 cCheck dependencies
 cProcessInfoPlistFile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist" Quitter-Info.plist
+cCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/FlipsideView.xib"
+cCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/MainView.xib"
 cCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/MainWindow.xib"
-cCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/QuitterViewController.xib"
-cProcessPCH /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-ehfqqjisftmuhuehtrvaluvwgzfg/Quitter_Prefix.pch.gch Quitter_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch.gch Quitter_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o "/Users/jchilders/Documents/XCode Projects/Quitter/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterViewController.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/MainViewController.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/MainViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/FlipsideViewController.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/FlipsideViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o "/Users/jchilders/Documents/XCode Projects/Quitter/Smoke.m" normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter" normal i386
 cGenerateDSYMFile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM" "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter"
 cTouch "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app"
 
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk
-c000000004AD9C51D00000000000000EE
-t1255785757
-s238
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CC128950000000000000110
+t1287727253
+s272
 
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004ABDC853000000000026EE30
-t1253951571
-s2551344
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
 
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004ABDC952000000000027E880
-t1253951826
-s2615424
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
 
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004ABDC93F0000000000001355
-t1253951807
-s4949
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
 
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004ABDEE1D0000000000000788
-t1253961245
-s1928
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
 
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004ABDEEE200000000016721E0
-t1253961442
-s23536096
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/FlipsideViewController.h
+c000000004D1FA9A3000000000000023A
+t1293920675
+s570
+i<UIKit/UIKit.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/FlipsideViewController.m
+c000000004D1FA9A3000000000000045F
+t1293920675
+s1119
+i"FlipsideViewController.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/MainViewController.h
+c000000004D210FBE00000000000001FC
+t1294012350
+s508
+i"FlipsideViewController.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/MainViewController.m
+c000000004D211CC700000000000007C6
+t1294015687
+s1990
+i"MainViewController.h"
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.h
-c000000004AE0CC0600000000000001E2
-t1256246278
-s482
+c000000004D1FA9A300000000000001E7
+t1293920675
+s487
 i<UIKit/UIKit.h>
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m
-c000000004AE0CC06000000000000026D
-t1256246278
-s621
+c000000004D211CE20000000000000AD7
+t1294015714
+s2775
 i"QuitterAppDelegate.h"
-i"QuitterViewController.h"
+i"MainViewController.h"
 
-N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.h
-c000000004AE6208C000000000000028D
-t1256595596
-s653
-i<UIKit/UIKit.h>
+N/Users/jchilders/Documents/XCode Projects/Quitter/FlipsideView.xib
+c000000004D20FADF0000000000004FF8
+t1294007007
+s20472
 
-N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m
-c000000004AE63D980000000000000909
-t1256603032
-s2313
-i"QuitterViewController.h"
-
-N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.h
-c000000004AE602EB00000000000001A9
-t1256588011
-s425
-i<Foundation/Foundation.h>
-
-N/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m
-c000000004AE602EB000000000000026B
-t1256588011
-s619
-i"Smoke.h"
+N/Users/jchilders/Documents/XCode Projects/Quitter/MainView.xib
+c000000004D2112A80000000000005E61
+t1294013096
+s24161
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/MainWindow.xib
-c000000004AE0CC06000000000000244E
-t1256246278
-s9294
+c000000004D1FA9A30000000000005098
+t1293920675
+s20632
 
-N/Users/jchilders/Documents/XCode Projects/Quitter/QuitterViewController.xib
-c000000004AE62FD00000000000005B5E
-t1256599504
-s23390
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/FlipsideViewController.h
+c000000004D1FA9A3000000000000023A
+t1293920675
+s570
+i<UIKit/UIKit.h>
 
-N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter_Prefix.pch
-c000000004AE0CC0600000000000000B7
-t1256246278
-s183
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/FlipsideViewController.m
+c000000004D1FA9A3000000000000045F
+t1293920675
+s1119
+i"FlipsideViewController.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/MainViewController.h
+c000000004D210FBE00000000000001FC
+t1294012350
+s508
+i"FlipsideViewController.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/MainViewController.m
+c000000004D2119880000000000000847
+t1294014856
+s2119
+i"MainViewController.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/QuitterAppDelegate.h
+c000000004D1FA9A300000000000001E7
+t1293920675
+s487
+i<UIKit/UIKit.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/QuitterAppDelegate.m
+c000000004D2105070000000000000AAE
+t1294009607
+s2734
+i"QuitterAppDelegate.h"
+i"MainViewController.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/FlipsideView.xib
+c000000004D20FADF0000000000004FF8
+t1294007007
+s20472
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainView.xib
+c000000004D2112A80000000000005E61
+t1294013096
+s24161
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainWindow.xib
+c000000004D1FA9A30000000000005098
+t1293920675
+s20632
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Quitter_Prefix.pch
+c000000004D1FA9A30000000000000140
+t1293920675
+s320
+i<Availability.h>
 i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
-N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app
-t1256603032
-s238
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Smoke.h
+c000000004D2103A6000000000000014C
+t1294009254
+s332
+i<Foundation/Foundation.h>
 
-N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM
-t1256603032
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Smoke.m
+c000000004D2104080000000000000193
+t1294009352
+s403
+i"Smoke.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app
+t1294014859
+s272
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM
+t1294014859
 s102
 
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/FlipsideView.nib
+t1294007012
+s1196
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist
+t1293920680
+s591
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/MainView.nib
+t1294013110
+s2113
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/MainWindow.nib
+t1293920681
+s1149
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/PkgInfo
+t1293920680
+s8
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter
+t1294014859
+s25540
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/FlipsideViewController.o
+t1293920682
+s40876
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/MainViewController.o
+t1294014859
+s45380
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Quitter.LinkFileList
+c000000004D21024600000000000002F0
+t1294008902
+s752
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o
+t1294012365
+s51076
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o
+t1294009825
+s8596
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o
+t1293920682
+s6340
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/main.m
+c000000004D1FA9A30000000000000172
+t1293920675
+s370
+i<UIKit/UIKit.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Quitter_Prefix.pch
+c000000004D1FA9A30000000000000140
+t1293920675
+s320
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Smoke.h
+c000000004D2103A6000000000000014C
+t1294009254
+s332
+i<Foundation/Foundation.h>
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/Smoke.m
+c000000004D211CFB00000000000001D0
+t1294015739
+s464
+i"Smoke.h"
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app
+t1294015740
+s272
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM
+t1294015740
+s102
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/FlipsideView.nib
+t1294007012
+s1196
+
 N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist
-t1256588146
-s564
+t1293920680
+s591
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/MainView.nib
+t1294013110
+s2113
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/MainWindow.nib
-t1256327437
-s1495
+t1293920681
+s1149
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/PkgInfo
-t1256588146
+t1293920680
 s8
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter
-t1256603032
-s26564
+t1294015740
+s25368
 
-N/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/QuitterViewController.nib
-t1256599508
-s3253
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/FlipsideViewController.o
+t1294014982
+s40860
+
+N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/MainViewController.o
+t1294015717
+s44672
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Quitter.LinkFileList
-c000000004AE2090D0000000000000234
-t1256327437
-s564
+c000000004D211A0500000000000002C8
+t1294014981
+s712
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o
-t1256595635
-s38224
-
-N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterViewController.o
-t1256603032
-s38232
+t1294015717
+s51296
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o
-t1256588146
-s10144
+t1294015740
+s9304
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o
-t1256327438
-s5980
-
-N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/StaticAnalyzer/normal/i386/QuitterAppDelegate.plist
-t1256588146
-s275
-
-N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/StaticAnalyzer/normal/i386/QuitterViewController.plist
-t1256588146
-s275
-
-N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/StaticAnalyzer/normal/i386/Smoke.plist
-t1256588146
-s275
-
-N/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/StaticAnalyzer/normal/i386/main.plist
-t1256588146
-s275
+t1294014982
+s6324
 
 N/Users/jchilders/Documents/XCode Projects/Quitter/main.m
-c000000004AE0CC06000000000000016C
-t1256246278
-s364
+c000000004D1FA9A30000000000000172
+t1293920675
+s370
 i<UIKit/UIKit.h>
 
-N/var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-ehfqqjisftmuhuehtrvaluvwgzfg/Quitter_Prefix.pch.gch
-t1256327438
-s13034960
+N/var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch.gch
+t1294014982
+s15453392
 
-N/var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fqrebodqblwbndfdonexmielfrlk/Quitter_Prefix.pch.pth
-t1256588146
-s1729084
+N/var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fesushcyozvdbbftpuxqdnouqvuz/Quitter_Prefix.pch.gch
+t1293920682
+s15453392
 
 NQuitter-Info.plist
-c000000004AE209E2000000000000038D
-t1256327650
+c000000004D1FA9A3000000000000038D
+t1293920675
 s909
-
-CAnalyze "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m"
-s278280946.363581
-e278280946.450032
-r1
-xAnalyze
-x/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m
-lSLF07#2@86"Analyze /Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m278280946#278280946#0(0"0(0#0#78"/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m4300885448#2047"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fqrebodqblwbndfdonexmielfrlk/Quitter_Prefix.pch --analyze "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/StaticAnalyzer/normal/i386/QuitterAppDelegate.plist"0#
-
-CAnalyze "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m"
-s278280946.450135
-e278280946.542115
-r1
-xAnalyze
-x/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m
-lSLF07#2@89"Analyze /Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m278280946#278280946#0(0"0(0#0#81"/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m4300885448#2053"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fqrebodqblwbndfdonexmielfrlk/Quitter_Prefix.pch --analyze "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/StaticAnalyzer/normal/i386/QuitterViewController.plist"0#
-
-CAnalyze "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m"
-s278280946.542215
-e278280946.596800
-r1
-xAnalyze
-x/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m
-lSLF07#2@73"Analyze /Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m278280946#278280946#0(0"0(0#0#65"/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m4300885448#2021"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fqrebodqblwbndfdonexmielfrlk/Quitter_Prefix.pch --analyze "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/StaticAnalyzer/normal/i386/Smoke.plist"0#
-
-CAnalyze "/Users/jchilders/Documents/XCode Projects/Quitter/main.m"
-s278280946.271250
-e278280946.363472
-r1
-xAnalyze
-x/Users/jchilders/Documents/XCode Projects/Quitter/main.m
-lSLF07#2@64"Analyze /Users/jchilders/Documents/XCode Projects/Quitter/main.m278280946#278280946#0(0"0(0#0#56"/Users/jchilders/Documents/XCode Projects/Quitter/main.m4300885448#2011"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fqrebodqblwbndfdonexmielfrlk/Quitter_Prefix.pch --analyze "/Users/jchilders/Documents/XCode Projects/Quitter/main.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/StaticAnalyzer/normal/i386/main.plist"0#
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies278295832#278295832#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies315708542#315708542#0(0"0(0#1#0"8618330880#0"0#
+
+CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/FlipsideViewController.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/FlipsideViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s315707782.746719
+e315707782.838689
+r1
+xCompileC
+xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/FlipsideViewController.o
+x/Users/jchilders/Documents/XCode Projects/Quitter/Classes/FlipsideViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Classes/FlipsideViewController.m315707782#315707782#0(0"0(0#0#82"/Users/jchilders/Documents/XCode Projects/Quitter/Classes/FlipsideViewController.m8603123872#2101"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/FlipsideViewController.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/FlipsideViewController.o"0#
+
+CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/FlipsideViewController.o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/FlipsideViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s315613482.390196
+e315613482.473117
+r1
+xCompileC
+xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/FlipsideViewController.o
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/FlipsideViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/FlipsideViewController.m315613482#315613482#0(0"0(0#0#90"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/FlipsideViewController.m8607532480#2189"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fesushcyozvdbbftpuxqdnouqvuz/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/FlipsideViewController.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/FlipsideViewController.o"0#
+
+CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/MainViewController.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/MainViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s315708517.590050
+e315708517.778614
+r1
+xCompileC
+xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/MainViewController.o
+x/Users/jchilders/Documents/XCode Projects/Quitter/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Classes/MainViewController.m315708517#315708517#0(0"0(0#0#78"/Users/jchilders/Documents/XCode Projects/Quitter/Classes/MainViewController.m8617999232#2093"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/MainViewController.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/MainViewController.o"0#
+
+CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/MainViewController.o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/MainViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s315707659.175895
+e315707659.369676
+r1
+xCompileC
+xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/MainViewController.o
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/MainViewController.m315707659#315707659#0(0"0(0#0#86"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/MainViewController.m8618717600#2181"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fesushcyozvdbbftpuxqdnouqvuz/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/MainViewController.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/MainViewController.o"0#
 
 CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s278288435.480314
-e278288435.686336
+s315708517.527053
+e315708517.687245
 r1
 xCompileC
 xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o
@@ -230,37 +402,63 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@86"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m278288435#278288436#0(0"0(0#0#78"/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m4300885448#2038"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-ehfqqjisftmuhuehtrvaluvwgzfg/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o"0#
+lSLF07#2@86"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m315708517#315708517#0(0"0(0#0#78"/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m8616688512#2093"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterAppDelegate.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o"0#
 
-CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterViewController.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s278295832.733151
-e278295832.864281
+CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/QuitterAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s315705165.766420
+e315705165.898237
 r1
 xCompileC
-xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterViewController.o
-x/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m
+xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/QuitterAppDelegate.m
 xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@89"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m278295832#278295832#0(0"0(0#0#81"/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m4300885448#2044"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-ehfqqjisftmuhuehtrvaluvwgzfg/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/QuitterViewController.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterViewController.o"0#
+lSLF07#2@94"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/QuitterAppDelegate.m315705165#315705165#0(0"0(0#0#86"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/QuitterAppDelegate.m8619061504#2181"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fesushcyozvdbbftpuxqdnouqvuz/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Classes/QuitterAppDelegate.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/QuitterAppDelegate.o"0#
 
-CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s278280946.269990
-e278280946.414857
+CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Smoke.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s315702625.473799
+e315702625.615303
 r1
 xCompileC
 xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o
-x/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Smoke.m
 xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m278280946#278280946#0(0"0(0#0#65"/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m4300885448#2012"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-ehfqqjisftmuhuehtrvaluvwgzfg/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Classes/Smoke.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o"0#
+lSLF07#2@73"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Smoke.m315702625#315702625#0(0"0(0#0#65"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Smoke.m8617666688#2147"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fesushcyozvdbbftpuxqdnouqvuz/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Smoke.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o"0#
+
+CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o "/Users/jchilders/Documents/XCode Projects/Quitter/Smoke.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s315708540.170183
+e315708540.291142
+r1
+xCompileC
+xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o
+x/Users/jchilders/Documents/XCode Projects/Quitter/Smoke.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Smoke.m315708540#315708540#0(0"0(0#0#57"/Users/jchilders/Documents/XCode Projects/Quitter/Smoke.m8601391456#2059"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Smoke.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Smoke.o"0#
+
+CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s315613482.295579
+e315613482.369078
+r1
+xCompileC
+xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/jchilders/Documents/XCode Projects/Quitter/Quitter/main.m315613482#315613482#0(0"0(0#0#64"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/main.m8603064224#2145"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fesushcyozvdbbftpuxqdnouqvuz/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/main.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o"0#
 
 CCompileC build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o "/Users/jchilders/Documents/XCode Projects/Quitter/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s278020238.521534
-e278020238.585837
+s315707782.591886
+e315707782.652217
 r1
 xCompileC
 xbuild/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o
@@ -269,83 +467,130 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/jchilders/Documents/XCode Projects/Quitter/main.m278020238#278020238#0(0"0(0#0#56"/Users/jchilders/Documents/XCode Projects/Quitter/main.m4300885448#2002"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-ehfqqjisftmuhuehtrvaluvwgzfg/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/main.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o"0#
+lSLF07#2@64"Compile /Users/jchilders/Documents/XCode Projects/Quitter/main.m315707782#315707782#0(0"0(0#0#56"/Users/jchilders/Documents/XCode Projects/Quitter/main.m8603403904#2057"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -include /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch -c "/Users/jchilders/Documents/XCode Projects/Quitter/main.m" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/FlipsideView.xib"
+r0
+
+CCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/MainView.xib"
+r0
 
 CCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/MainWindow.xib"
-s278020237.241576
-e278020237.680749
-r1
-xCompileXIB
-x/Users/jchilders/Documents/XCode Projects/Quitter/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib278020237#278020237#0(0"0(0#0#64"/Users/jchilders/Documents/XCode Projects/Quitter/MainWindow.xib4300885448#521"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/MainWindow.nib" "/Users/jchilders/Documents/XCode Projects/Quitter/MainWindow.xib"0#
+r0
 
-CCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/QuitterViewController.xib"
-s278292307.462907
-e278292308.545251
+CCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/FlipsideView.xib"
+s315699811.827985
+e315699812.223133
 r1
 xCompileXIB
-x/Users/jchilders/Documents/XCode Projects/Quitter/QuitterViewController.xib
-lSLF07#2@36"CompileXIB QuitterViewController.xib278292307#278292308#0(0"0(0#0#75"/Users/jchilders/Documents/XCode Projects/Quitter/QuitterViewController.xib4300885448#543"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/QuitterViewController.nib" "/Users/jchilders/Documents/XCode Projects/Quitter/QuitterViewController.xib"0#
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/FlipsideView.xib
+lSLF07#2@27"CompileXIB FlipsideView.xib315699811#315699812#0(0"0(0#0#74"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/FlipsideView.xib27866499440181296#637"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/FlipsideView.nib" "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/FlipsideView.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainView.xib"
+s315705909.836087
+e315705910.269807
+r1
+xCompileXIB
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainView.xib
+lSLF07#2@23"CompileXIB MainView.xib315705909#315705910#0(0"0(0#0#70"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainView.xib8618080000#629"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/MainView.nib" "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainView.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainWindow.xib"
+s315613481.117772
+e315613481.495861
+r1
+xCompileXIB
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib315613481#315613481#0(0"0(0#0#72"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainWindow.xib8605251968#633"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/MainWindow.nib" "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CGenerateDSYMFile "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM" "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter"
+s315707659.467290
+e315707659.550009
+r1
+xGenerateDSYMFile
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter
+lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/Quitter.app.dSYM build/Debug-iphonesimulator/Quitter.app/Quitter315707659#315707659#0(0"0(0#0#105"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter8618329728#446"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter" -o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM"0#
 
 CGenerateDSYMFile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM" "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter"
-s278295832.887504
-e278295832.903064
+s315708540.318871
+e315708540.344330
 r1
 xGenerateDSYMFile
 x/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM
 x/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter
-lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/Quitter.app.dSYM build/Debug-iphonesimulator/Quitter.app/Quitter278295832#278295832#0(0"0(0#0#97"/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter4300885448#422"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM"0#
+lSLF07#2@109"GenerateDSYMFile build/Debug-iphonesimulator/Quitter.app.dSYM build/Debug-iphonesimulator/Quitter.app/Quitter315708540#315708540#0(0"0(0#0#97"/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter8617839808#422"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter" -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app.dSYM"0#
+
+CLd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter" normal i386
+s315707659.369772
+e315707659.467190
+r1
+xLd
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter
+xnormal
+xi386
+lSLF07#2@110"Link /Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter315707659#315707659#0(0"0(0#0#0"8619086432#1005"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator" "-F/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator" -filelist "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Quitter.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter"0#
 
 CLd "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter" normal i386
-s278295832.864376
-e278295832.887394
+s315708540.291240
+e315708540.318770
 r1
 xLd
 x/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter
 xnormal
 xi386
-lSLF07#2@102"Link /Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter278295832#278295832#0(0"0(0#0#0"4300885448#929"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk "-L/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" -filelist "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Quitter.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter"0#
+lSLF07#2@102"Link /Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter315708540#315708540#0(0"0(0#0#0"8618432032#965"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk "-L/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" -filelist "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Objects-normal/i386/Quitter.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Quitter"0#
 
-CProcessInfoPlistFile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist" Quitter-Info.plist
-s278280946.027645
-e278280946.045249
+CProcessInfoPlistFile "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist" Quitter-Info.plist
+s315613480.677856
+e315613480.682396
 r1
 xProcessInfoPlistFile
-x/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist
 xQuitter-Info.plist
-lSLF07#2@26"Process Quitter-Info.plist278280946#278280946#0(0"0(0#0#68"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter-Info.plist4300885448#518"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Quitter-Info.plist -genpkginfo "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist"0#
+lSLF07#2@26"Process Quitter-Info.plist315613480#315613480#0(0"0(0#0#76"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Quitter-Info.plist8607255296#542"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Quitter-Info.plist -genpkginfo "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist"0#
 
-CProcessPCH /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-ehfqqjisftmuhuehtrvaluvwgzfg/Quitter_Prefix.pch.gch Quitter_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s278020237.680868
-e278020238.520921
+CProcessInfoPlistFile "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app/Info.plist" Quitter-Info.plist
+r0
+
+CProcessPCH /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch.gch Quitter_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s315707781.622061
+e315707782.591733
 r1
 xProcessPCH
-x/var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-ehfqqjisftmuhuehtrvaluvwgzfg/Quitter_Prefix.pch.gch
+x/var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch.gch
 xQuitter_Prefix.pch
 xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@29"Precompile Quitter_Prefix.pch278020237#278020238#0(0"0(0#0#68"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter_Prefix.pch4300885448#1881"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter_Prefix.pch" -o /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-ehfqqjisftmuhuehtrvaluvwgzfg/Quitter_Prefix.pch.gch0#
+lSLF07#2@29"Precompile Quitter_Prefix.pch315707781#315707782#0(0"0(0#0#68"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter_Prefix.pch8237188663393678336#1936"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter_Prefix.pch" -o /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-adhjqdtjmmluusbhoijtwthtmeqh/Quitter_Prefix.pch.gch0#
 
-CProcessPCH /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fqrebodqblwbndfdonexmielfrlk/Quitter_Prefix.pch.pth Quitter_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
-s278280946.045737
-e278280946.245772
+CProcessPCH /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fesushcyozvdbbftpuxqdnouqvuz/Quitter_Prefix.pch.gch Quitter_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s315613481.495990
+e315613482.295323
 r1
 xProcessPCH
-x/var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fqrebodqblwbndfdonexmielfrlk/Quitter_Prefix.pch.pth
+x/var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fesushcyozvdbbftpuxqdnouqvuz/Quitter_Prefix.pch.gch
 xQuitter_Prefix.pch
 xnormal
 xi386
 xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.analyzer
-lSLF07#2@29"Precompile Quitter_Prefix.pch278280946#278280946#0(0"0(0#0#68"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter_Prefix.pch4300885448#1872"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter_Prefix.pch" -o /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fqrebodqblwbndfdonexmielfrlk/Quitter_Prefix.pch.pth0#
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Quitter_Prefix.pch315613481#315613482#0(0"0(0#0#76"/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Quitter_Prefix.pch8608252384#2016"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-generated-files.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-own-target-headers.hmap" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-all-target-headers.hmap" -iquote "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/Quitter-project-headers.hmap" "-F/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/include" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources/i386" "-I/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Quitter.build/Debug-iphonesimulator/Quitter.build/DerivedSources" -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/Quitter_Prefix.pch" -o /var/folders/WP/WPJH-j6sE-COIdEjqswVdk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Quitter_Prefix-fesushcyozvdbbftpuxqdnouqvuz/Quitter_Prefix.pch.gch0#
+
+CTouch "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app"
+s315707659.550104
+e315707659.553076
+r1
+xTouch
+x/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app
+lSLF07#2@103"Touch /Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app315707659#315707659#0(0"0(0#0#0"8618038400#320"    cd "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/jchilders/Documents/XCode Projects/Quitter/Quitter/build/Debug-iphonesimulator/Quitter.app"0#
 
 CTouch "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app"
-s278295832.903159
-e278295832.905792
+s315708540.344453
+e315708540.349090
 r1
 xTouch
 x/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app
-lSLF07#2@95"Touch /Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app278295832#278295832#0(0"0(0#0#0"4300885448#304"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app"0#
+lSLF07#2@95"Touch /Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app315708540#315708540#0(0"0(0#0#0"8617382432#304"    cd "/Users/jchilders/Documents/XCode Projects/Quitter"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/jchilders/Documents/XCode Projects/Quitter/build/Debug-iphonesimulator/Quitter.app"0#
 

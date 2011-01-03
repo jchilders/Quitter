@@ -11,35 +11,14 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* QuitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuitterViewController.xib */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28D7ACF80DDB3853001CB0EB /* QuitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuitterViewController.m */; };
-		7C10750510922985009F948C /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C10750410922985009F948C /* Smoke.m */; };
-		7C313A2010923D8D006F8F14 /* LogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C313A1F10923D8D006F8F14 /* LogicTests.m */; };
-		7C313A5E10924162006F8F14 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		7C313A5F10924162006F8F14 /* QuitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* QuitterViewController.xib */; };
-		7C313A6110924162006F8F14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		7C313A6210924162006F8F14 /* QuitterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QuitterAppDelegate.m */; };
-		7C313A6310924162006F8F14 /* QuitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* QuitterViewController.m */; };
-		7C313A6410924162006F8F14 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C10750410922985009F948C /* Smoke.m */; };
-		7C313A6610924162006F8F14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		7C313A6710924162006F8F14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		7C313A6810924162006F8F14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		7C313A8510924206006F8F14 /* QuitterAppTests.octest in Resources */ = {isa = PBXBuildFile; fileRef = 7C313A78109241AC006F8F14 /* QuitterAppTests.octest */; };
-		7C313A8E10924250006F8F14 /* QuitterAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C313A8D10924250006F8F14 /* QuitterAppTests.m */; };
-		7C313B39109249E3006F8F14 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C10750410922985009F948C /* Smoke.m */; };
+		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
+		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
+		280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754C0DD40C5E005A515E /* MainWindow.xib */; };
+		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
+		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
+		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
+		7C762A9112D1394100B39FE6 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C762A9012D1394100B39FE6 /* Smoke.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7C313A7D109241CC006F8F14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7C313A77109241AB006F8F14 /* QuitterAppTests */;
-			remoteInfo = QuitterAppTests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,25 +26,18 @@
 		1D3623250D0F684500981E51 /* QuitterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitterAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Quitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* QuitterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuitterViewController.xib; sourceTree = "<group>"; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* QuitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuitterViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* QuitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitterViewController.m; sourceTree = "<group>"; };
+		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
+		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		280E754C0DD40C5E005A515E /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
+		289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideViewController.h; path = Classes/FlipsideViewController.h; sourceTree = "<group>"; };
+		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Quitter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quitter_Prefix.pch; sourceTree = "<group>"; };
-		7C10750310922985009F948C /* Smoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smoke.h; sourceTree = "<group>"; };
-		7C10750410922985009F948C /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smoke.m; sourceTree = "<group>"; };
-		7C3139E610923B09006F8F14 /* QuitterLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuitterLogicTests-Info.plist"; sourceTree = "<group>"; };
-		7C313A1410923D21006F8F14 /* LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C313A1510923D21006F8F14 /* LogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTests-Info.plist"; sourceTree = "<group>"; };
-		7C313A1F10923D8D006F8F14 /* LogicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogicTests.m; sourceTree = "<group>"; };
-		7C313A6C10924162006F8F14 /* Quitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C313A6E10924162006F8F14 /* Quitter-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Quitter-Info copy.plist"; sourceTree = "<group>"; };
-		7C313A78109241AC006F8F14 /* QuitterAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuitterAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C313A79109241AC006F8F14 /* QuitterAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuitterAppTests-Info.plist"; sourceTree = "<group>"; };
-		7C313A8C10924250006F8F14 /* QuitterAppTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuitterAppTests.h; sourceTree = "<group>"; };
-		7C313A8D10924250006F8F14 /* QuitterAppTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitterAppTests.m; sourceTree = "<group>"; };
+		7C762A8F12D1394100B39FE6 /* Smoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smoke.h; sourceTree = "<group>"; };
+		7C762A9012D1394100B39FE6 /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smoke.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Quitter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quitter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,47 +48,20 @@
 			files = (
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C313A1110923D21006F8F14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C313A6510924162006F8F14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C313A6610924162006F8F14 /* Foundation.framework in Frameworks */,
-				7C313A6710924162006F8F14 /* UIKit.framework in Frameworks */,
-				7C313A6810924162006F8F14 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C313A75109241AB006F8F14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
+		080E96DDFE201D6D7F000001 /* Application Delegate */ = {
 			isa = PBXGroup;
 			children = (
 				1D3623240D0F684500981E51 /* QuitterAppDelegate.h */,
 				1D3623250D0F684500981E51 /* QuitterAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* QuitterViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* QuitterViewController.m */,
-				7C10750310922985009F948C /* Smoke.h */,
-				7C10750410922985009F948C /* Smoke.m */,
 			);
+			name = "Application Delegate";
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -124,25 +69,40 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Quitter.app */,
-				7C313A1410923D21006F8F14 /* LogicTests.octest */,
-				7C313A6C10924162006F8F14 /* Quitter.app */,
-				7C313A78109241AC006F8F14 /* QuitterAppTests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
+			isa = PBXGroup;
+			children = (
+				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
+				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
+			);
+			name = "Flipside View";
+			sourceTree = "<group>";
+		};
+		289233A00DB2D0730083E9F9 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
+				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
+			);
+			name = "Main View";
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				7C313A1D10923D71006F8F14 /* Tests */,
-				080E96DDFE201D6D7F000001 /* Classes */,
+				7CEC9E2D12D1519E0036C824 /* Data */,
+				289233A00DB2D0730083E9F9 /* Main View */,
+				281C6CD70DB2D82200F60ACC /* Flipside View */,
+				080E96DDFE201D6D7F000001 /* Application Delegate */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				7CEC9E2F12D153560036C824 /* Tests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				7C3139E610923B09006F8F14 /* QuitterLogicTests-Info.plist */,
-				7C313A1510923D21006F8F14 /* LogicTests-Info.plist */,
-				7C313A79109241AC006F8F14 /* QuitterAppTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -159,10 +119,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2899E5210DE3E06400AC0155 /* QuitterViewController.xib */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
+				280E754B0DD40C5E005A515E /* MainView.xib */,
+				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Quitter-Info.plist */,
-				7C313A6E10924162006F8F14 /* Quitter-Info copy.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -172,17 +132,23 @@
 			children = (
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
-				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				288765580DF743DE002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7C313A1D10923D71006F8F14 /* Tests */ = {
+		7CEC9E2D12D1519E0036C824 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				7C313A1F10923D8D006F8F14 /* LogicTests.m */,
-				7C313A8C10924250006F8F14 /* QuitterAppTests.h */,
-				7C313A8D10924250006F8F14 /* QuitterAppTests.m */,
+				7C762A8F12D1394100B39FE6 /* Smoke.h */,
+				7C762A9012D1394100B39FE6 /* Smoke.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		7CEC9E2F12D153560036C824 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -207,79 +173,27 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* Quitter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7C313A1310923D21006F8F14 /* LogicTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7C313A1810923D21006F8F14 /* Build configuration list for PBXNativeTarget "LogicTests" */;
-			buildPhases = (
-				7C313A0F10923D21006F8F14 /* Resources */,
-				7C313A1010923D21006F8F14 /* Sources */,
-				7C313A1110923D21006F8F14 /* Frameworks */,
-				7C313A1210923D21006F8F14 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LogicTests;
-			productName = LogicTests;
-			productReference = 7C313A1410923D21006F8F14 /* LogicTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-		7C313A5C10924162006F8F14 /* QuitterTesting */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7C313A6910924162006F8F14 /* Build configuration list for PBXNativeTarget "QuitterTesting" */;
-			buildPhases = (
-				7C313A5D10924162006F8F14 /* Resources */,
-				7C313A6010924162006F8F14 /* Sources */,
-				7C313A6510924162006F8F14 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7C313A7E109241CC006F8F14 /* PBXTargetDependency */,
-			);
-			name = QuitterTesting;
-			productName = Quitter;
-			productReference = 7C313A6C10924162006F8F14 /* Quitter.app */;
-			productType = "com.apple.product-type.application";
-		};
-		7C313A77109241AB006F8F14 /* QuitterAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7C313A7C109241AC006F8F14 /* Build configuration list for PBXNativeTarget "QuitterAppTests" */;
-			buildPhases = (
-				7C313A73109241AB006F8F14 /* Resources */,
-				7C313A74109241AB006F8F14 /* Sources */,
-				7C313A75109241AB006F8F14 /* Frameworks */,
-				7C313A76109241AB006F8F14 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = QuitterAppTests;
-			productName = QuitterAppTests;
-			productReference = 7C313A78109241AC006F8F14 /* QuitterAppTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			attributes = {
-				ORGANIZATIONNAME = "Green Bar Consulting, LLC";
-			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Quitter" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Quitter */,
-				7C313A1310923D21006F8F14 /* LogicTests */,
-				7C313A5C10924162006F8F14 /* QuitterTesting */,
-				7C313A77109241AB006F8F14 /* QuitterAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,65 +203,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* QuitterViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C313A0F10923D21006F8F14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C313A5D10924162006F8F14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C313A8510924206006F8F14 /* QuitterAppTests.octest in Resources */,
-				7C313A5E10924162006F8F14 /* MainWindow.xib in Resources */,
-				7C313A5F10924162006F8F14 /* QuitterViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C313A73109241AB006F8F14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
+				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
+				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7C313A1210923D21006F8F14 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		7C313A76109241AB006F8F14 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -356,48 +218,13 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* QuitterAppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* QuitterViewController.m in Sources */,
-				7C10750510922985009F948C /* Smoke.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C313A1010923D21006F8F14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C313B39109249E3006F8F14 /* Smoke.m in Sources */,
-				7C313A2010923D8D006F8F14 /* LogicTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C313A6010924162006F8F14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C313A6110924162006F8F14 /* main.m in Sources */,
-				7C313A6210924162006F8F14 /* QuitterAppDelegate.m in Sources */,
-				7C313A6310924162006F8F14 /* QuitterViewController.m in Sources */,
-				7C313A6410924162006F8F14 /* Smoke.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C313A74109241AB006F8F14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C313A8E10924250006F8F14 /* QuitterAppTests.m in Sources */,
+				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
+				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
+				7C762A9112D1394100B39FE6 /* Smoke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7C313A7E109241CC006F8F14 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7C313A77109241AB006F8F14 /* QuitterAppTests */;
-			targetProxy = 7C313A7D109241CC006F8F14 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -423,148 +250,7 @@
 				GCC_PREFIX_HEADER = Quitter_Prefix.pch;
 				INFOPLIST_FILE = "Quitter-Info.plist";
 				PRODUCT_NAME = Quitter;
-			};
-			name = Release;
-		};
-		7C313A1610923D21006F8F14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "LogicTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					SenTestingKit,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = LogicTests;
-				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = iphonesimulator3.1.2;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		7C313A1710923D21006F8F14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				INFOPLIST_FILE = "LogicTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					SenTestingKit,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = LogicTests;
-				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = iphonesimulator3.1.2;
-				WRAPPER_EXTENSION = octest;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		7C313A6A10924162006F8F14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Quitter_Prefix.pch;
-				INFOPLIST_FILE = "Quitter-Info copy.plist";
-				PRODUCT_NAME = Quitter;
-			};
-			name = Debug;
-		};
-		7C313A6B10924162006F8F14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Quitter_Prefix.pch;
-				INFOPLIST_FILE = "Quitter-Info copy.plist";
-				PRODUCT_NAME = Quitter;
-			};
-			name = Release;
-		};
-		7C313A7A109241AC006F8F14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "QuitterAppTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					SenTestingKit,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = QuitterAppTests;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		7C313A7B109241AC006F8F14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				INFOPLIST_FILE = "QuitterAppTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					SenTestingKit,
-					"-framework",
-					UIKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = QuitterAppTests;
-				WRAPPER_EXTENSION = octest;
-				ZERO_LINK = NO;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -577,7 +263,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -589,8 +275,9 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -602,33 +289,6 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7C313A1810923D21006F8F14 /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7C313A1610923D21006F8F14 /* Debug */,
-				7C313A1710923D21006F8F14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7C313A6910924162006F8F14 /* Build configuration list for PBXNativeTarget "QuitterTesting" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7C313A6A10924162006F8F14 /* Debug */,
-				7C313A6B10924162006F8F14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7C313A7C109241AC006F8F14 /* Build configuration list for PBXNativeTarget "QuitterAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7C313A7A109241AC006F8F14 /* Debug */,
-				7C313A7B109241AC006F8F14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
