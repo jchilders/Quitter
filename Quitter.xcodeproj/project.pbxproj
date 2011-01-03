@@ -17,7 +17,10 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
-		7C60CCB912D1599600EDD218 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60CCB812D1599600EDD218 /* Smoke.m */; };
+		7C68422C12D169DE008C0628 /* Smokes.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C68422B12D169DE008C0628 /* Smokes.xcdatamodel */; };
+		7C68423312D16BC6008C0628 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C68423212D16BC6008C0628 /* Smoke.m */; };
+		7C68424512D16CB9008C0628 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C68424412D16CB9008C0628 /* CoreData.framework */; };
+		7C68425912D16F2D008C0628 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C68425812D16F2D008C0628 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +39,11 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Quitter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quitter_Prefix.pch; sourceTree = "<group>"; };
-		7C60CCB712D1599600EDD218 /* Smoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Smoke.h; path = Classes/Smoke.h; sourceTree = "<group>"; };
-		7C60CCB812D1599600EDD218 /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Smoke.m; path = Classes/Smoke.m; sourceTree = "<group>"; };
+		7C68422B12D169DE008C0628 /* Smokes.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Smokes.xcdatamodel; sourceTree = "<group>"; };
+		7C68423112D16BC6008C0628 /* Smoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smoke.h; sourceTree = "<group>"; };
+		7C68423212D16BC6008C0628 /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smoke.m; sourceTree = "<group>"; };
+		7C68424412D16CB9008C0628 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7C68425812D16F2D008C0628 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Quitter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quitter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +55,8 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
+				7C68424512D16CB9008C0628 /* CoreData.framework in Frameworks */,
+				7C68425912D16F2D008C0628 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +126,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7C68423112D16BC6008C0628 /* Smoke.h */,
+				7C68423212D16BC6008C0628 /* Smoke.m */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Quitter-Info.plist */,
+				7C68422B12D169DE008C0628 /* Smokes.xcdatamodel */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -129,6 +140,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C68424412D16CB9008C0628 /* CoreData.framework */,
+				7C68425812D16F2D008C0628 /* CoreLocation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765580DF743DE002DB57D /* CoreGraphics.framework */,
@@ -139,8 +152,6 @@
 		7CE539B912D158E600B744A8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				7C60CCB712D1599600EDD218 /* Smoke.h */,
-				7C60CCB812D1599600EDD218 /* Smoke.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -212,7 +223,8 @@
 				1D3623260D0F684500981E51 /* QuitterAppDelegate.m in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
-				7C60CCB912D1599600EDD218 /* Smoke.m in Sources */,
+				7C68422C12D169DE008C0628 /* Smokes.xcdatamodel in Sources */,
+				7C68423312D16BC6008C0628 /* Smoke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,21 +7,31 @@
 //
 
 #import "MainViewController.h"
-
+#import "Smoke.h"
 
 @implementation MainViewController
 
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	
+	[self setNumSmokedToday:15];
+	
+	[self showNumSmokedToday];
+	[self showMotivationMessage];
+}
 
 - (void)showNumSmokedToday
 {
-	NSString *str = [NSString stringWithFormat:@"%d", [self numSmoked]];
+	NSLog(@"showNumSmokedToday called");
+//	NSString *str = [NSString stringWithFormat:@"%d", [self numSmokedToday]];
+	NSString *str = [NSString stringWithFormat:@"%d", [smokesArray count]];
 	[numSmokedLabel setText:str];
 }
 
 - (void)showMotivationMessage
 {
 	NSString *msg;
-	if ([self numSmoked] < 10) {
+	if ([self numSmokedToday] < 10) {
 		msg = @"You are doing better today.";
 	} else {
 		msg = @"You've had more today than yesterday.";
@@ -30,17 +40,46 @@
 	[motivationMessageLabel setText:msg];
 }
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-	[super viewDidLoad];
-	NSLog(@"In viewDidLoad.");
+- (void)addSmoke
+{
+	Smoke *smoke = (Smoke *)[NSEntityDescription insertNewObjectForEntityForName:@"Smoke"
+														  inManagedObjectContext:managedObjectContext];
 	
-	[self setNumSmoked:15];
+	[smoke setTimestamp:[NSDate date]];
 	
-	[self showNumSmokedToday];
-	[self showMotivationMessage];
+	NSError *error = nil;
+	if (![managedObjectContext save:&error]) {
+		// Handle the error.
+		NSLog(@"An error occured saving this Smoke.");
+	}
+	
+	NSLog(@"Smokes array before count: %d", [smokesArray count]);
+	[smokesArray insertObject:smoke atIndex:0];
+	NSLog(@"Smokes array after count: %d", [smokesArray count]);
 }
 
+- (IBAction)addAndShow:(id)sender
+{
+	[self addSmoke];
+	[self showNumSmokedToday];
+}
+
+- (void)subtractSmoke
+{
+	if (smokesArray == nil || [smokesArray count] == 0) {
+		return;
+	}
+	
+	[smokesArray removeLastObject];
+
+	[self showNumSmokedToday];
+}
+
+- (IBAction)subtractAndShow:(id)sender
+{
+	[self subtractSmoke];
+	[self showNumSmokedToday];
+}
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
     
@@ -68,10 +107,8 @@
 	// Release any cached data, images, etc. that aren't in use.
 }
 
-
 - (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+	self.smokesArray = nil;
 }
 
 /*
@@ -83,9 +120,15 @@
 */
 
 - (void)dealloc {
+	[managedObjectContext release];
+	[smokesArray release];
+	
     [super dealloc];
 }
 
-@synthesize numSmoked;
+@synthesize numSmokedToday;
+@synthesize smokesArray;
+@synthesize managedObjectContext;
+
 
 @end
