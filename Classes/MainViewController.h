@@ -11,7 +11,7 @@
 #import "FlipsideViewController.h"
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
-	NSDate *usingDate;
+	NSDate *activeDate;
 	NSMutableArray *smokesArray;
 	IBOutlet UILabel *numSmokedLabel;
 	IBOutlet UILabel *motivationMessageLabel;
@@ -32,7 +32,7 @@
 - (void)addSmoke;
 - (void)subtractSmoke;
 
-@property (nonatomic, retain) NSDate *usingDate;
+@property (nonatomic, retain) NSDate *activeDate;
 @property (nonatomic, retain) NSArray *smokesArray;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 

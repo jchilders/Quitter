@@ -15,15 +15,11 @@
 	[super viewDidLoad];
 
 	NSDate *today = [NSDate date];
-	[self setUsingDate:today];
-	[self setSmokesArray:[self getSmokesFor:[self usingDate]]];
+	[self setActiveDate:today];
+	[self setSmokesArray:[self getSmokesFor:[self activeDate]]];
 
 	[self snowNumSmoked];
 	[self showMotivationMessage];
-	
-	NSDate *yesterday = [today dateByAddingTimeInterval:-86400.0];
-	NSArray *smokesYestArray = [self getSmokesFor:yesterday];
-	NSLog(@"# of smokes yesterday: %d", [smokesYestArray count]);
 }
 
 - (int)numSmoked
@@ -36,19 +32,29 @@
 	NSLog(@"showNumSmokedToday called");
 	NSString *str = [NSString stringWithFormat:@"%d", [self numSmoked]];
 	[numSmokedLabel setText:str];
+	
+	[self showMotivationMessage];
 }
 
 - (NSArray *)getSmokesFor:(NSDate *)date
 {
 	NSCalendar *cal = [NSCalendar currentCalendar];
-	NSDateComponents *comp = [cal components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit 
-									fromDate:date];
-	NSDateComponents *oneDay = [[NSDateComponents alloc] init];
-	oneDay.day = 1;
 	
-	// from & to
-	NSDate *fromDate = [cal dateFromComponents:comp]; // Today at midnight
-	NSDate *toDate = [cal dateByAddingComponents:oneDay toDate:fromDate options:0]; // Tomorrow at midnight
+	// (date) at midnight, e.g.: this morning @ 12:00a.
+	NSDateComponents *fromComps = [cal components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit 
+									fromDate:date];
+	NSDate *fromDate = [cal dateFromComponents:fromComps]; // (date) at midnight, e.g.: this morning @ 12:00a.
+
+	// (date) @ current time, e.g.: today @ 4.58p.
+	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSDateComponents *toDateComps = [gregorian components:(NSDayCalendarUnit | NSWeekdayCalendarUnit) fromDate:fromDate];
+	NSDateComponents *toTimeComps = [gregorian components:(NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:[NSDate date]];
+	
+	[toDateComps setHour:[toTimeComps hour]];
+	[toDateComps setMinute:[toTimeComps minute]];
+	[toDateComps setSecond:[toTimeComps second]];
+	
+	NSDate *toDate = [gregorian dateFromComponents:toDateComps];
 	
 	// CoreData expressions 
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(timestamp >= %@) and (timestamp <= %@)", fromDate, toDate];
@@ -64,17 +70,20 @@
 	NSError *error = nil;
 	NSMutableArray *results = [[managedObjectContext executeFetchRequest:request error:&error] mutableCopy];
 	
+	[gregorian release];
 	[sortDescriptors release];
 	[sortDescriptor release];
-	[oneDay release];
 	
 	return results;
 }
 
 - (void)showMotivationMessage
 {
+	NSDate *priorDay = [activeDate dateByAddingTimeInterval:-86400.0];
+	NSArray *smokesPriorDayArray = [self getSmokesFor:priorDay];
+	
 	NSString *msg;
-	if ([smokesArray count] < 10) {
+	if ([smokesPriorDayArray count] < [smokesArray count]) {
 		msg = @"You are doing better today.";
 	} else {
 		msg = @"You've had more today than yesterday.";
@@ -89,7 +98,7 @@
 	Smoke *smoke = (Smoke *)[NSEntityDescription insertNewObjectForEntityForName:@"Smoke"
 														  inManagedObjectContext:managedObjectContext];
 	
-	[smoke setTimestamp:[NSDate date]];
+	[smoke setTimestamp:activeDate];
 	
 	NSError *error = nil;
 	if (![managedObjectContext save:&error]) {
@@ -104,11 +113,11 @@
 {
 	[self addSmoke];
 	[self snowNumSmoked];
-	[self showMotivationMessage];
 }
 
 - (void)subtractSmoke
 {
+	NSLog(@"subtractSmoke called");
 	if (smokesArray == nil || [smokesArray count] == 0) {
 		return;
 	}
@@ -116,8 +125,6 @@
 	// Delete the managed object at the given index path.
 	NSManagedObject *smokeToDelete = [smokesArray lastObject];
 	[managedObjectContext deleteObject:smokeToDelete];
-	
-	[smokesArray removeLastObject];
 
 	// Commit the change.
 	NSError *error = nil;
@@ -125,14 +132,13 @@
 		NSLog(@"Error deleting Smoke.");
 	}
 	
-	[self snowNumSmoked];
+	[smokesArray removeLastObject];
 }
 
 - (IBAction)subtractAndShow:(id)sender
 {
 	[self subtractSmoke];
 	[self snowNumSmoked];
-	[self showMotivationMessage];
 }
 
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
@@ -180,7 +186,7 @@
     [super dealloc];
 }
 
-@synthesize usingDate;
+@synthesize activeDate;
 @synthesize smokesArray;
 @synthesize managedObjectContext;
 
