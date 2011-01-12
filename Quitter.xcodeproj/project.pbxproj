@@ -17,11 +17,29 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
-		7C68422C12D169DE008C0628 /* Smokes.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C68422B12D169DE008C0628 /* Smokes.xcdatamodel */; };
-		7C68423312D16BC6008C0628 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C68423212D16BC6008C0628 /* Smoke.m */; };
+		7C579AB712D4199B00078ECD /* QuitterAppDelegateTestCases.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C579A9D12D4181E00078ECD /* QuitterAppDelegateTestCases.m */; };
+		7C579B0912D41DC000078ECD /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C579B0612D41DC000078ECD /* Smoke.m */; };
+		7C579B0A12D41DC000078ECD /* Smokes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C579B0812D41DC000078ECD /* Smokes.m */; };
+		7C64C5FC12DCCA0900024505 /* SmokesTestCases.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C64C58112DCC68500024505 /* SmokesTestCases.m */; };
+		7C64C60712DCCA6F00024505 /* Smokes.h in Resources */ = {isa = PBXBuildFile; fileRef = 7C579B0712D41DC000078ECD /* Smokes.h */; };
+		7C64C60B12DCCA8900024505 /* Smokes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C579B0812D41DC000078ECD /* Smokes.m */; };
+		7C64C63412DCCF7500024505 /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C579B0612D41DC000078ECD /* Smoke.m */; };
+		7C64C66712DCE5EC00024505 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C68424412D16CB9008C0628 /* CoreData.framework */; };
+		7C64C68C12DCE71100024505 /* Smokes_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C68422B12D169DE008C0628 /* Smokes_DataModel.xcdatamodel */; };
+		7C68422C12D169DE008C0628 /* Smokes_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C68422B12D169DE008C0628 /* Smokes_DataModel.xcdatamodel */; };
 		7C68424512D16CB9008C0628 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C68424412D16CB9008C0628 /* CoreData.framework */; };
 		7C68425912D16F2D008C0628 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C68425812D16F2D008C0628 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C579B5912D4201100078ECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = Quitter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,9 +57,15 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Quitter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quitter_Prefix.pch; sourceTree = "<group>"; };
-		7C68422B12D169DE008C0628 /* Smokes.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Smokes.xcdatamodel; sourceTree = "<group>"; };
-		7C68423112D16BC6008C0628 /* Smoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smoke.h; sourceTree = "<group>"; };
-		7C68423212D16BC6008C0628 /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smoke.m; sourceTree = "<group>"; };
+		7C579A9512D4159600078ECD /* LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C579A9612D4159600078ECD /* LogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTests-Info.plist"; sourceTree = "<group>"; };
+		7C579A9D12D4181E00078ECD /* QuitterAppDelegateTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitterAppDelegateTestCases.m; sourceTree = "<group>"; };
+		7C579B0512D41DC000078ECD /* Smoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smoke.h; sourceTree = "<group>"; };
+		7C579B0612D41DC000078ECD /* Smoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smoke.m; sourceTree = "<group>"; };
+		7C579B0712D41DC000078ECD /* Smokes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Smokes.h; sourceTree = "<group>"; };
+		7C579B0812D41DC000078ECD /* Smokes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Smokes.m; sourceTree = "<group>"; };
+		7C64C58112DCC68500024505 /* SmokesTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmokesTestCases.m; sourceTree = "<group>"; };
+		7C68422B12D169DE008C0628 /* Smokes_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Smokes_DataModel.xcdatamodel; sourceTree = "<group>"; };
 		7C68424412D16CB9008C0628 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7C68425812D16F2D008C0628 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* Quitter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quitter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -57,6 +81,14 @@
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
 				7C68424512D16CB9008C0628 /* CoreData.framework in Frameworks */,
 				7C68425912D16F2D008C0628 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C579A9212D4159600078ECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C64C66712DCE5EC00024505 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* Quitter.app */,
+				7C579A9512D4159600078ECD /* LogicTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +135,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				7C579A9B12D417FC00078ECD /* LogicTests */,
 				7CE539B912D158E600B744A8 /* Data */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
@@ -110,6 +144,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				7C579A9612D4159600078ECD /* LogicTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -126,13 +161,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7C68423112D16BC6008C0628 /* Smoke.h */,
-				7C68423212D16BC6008C0628 /* Smoke.m */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Quitter-Info.plist */,
-				7C68422B12D169DE008C0628 /* Smokes.xcdatamodel */,
+				7C68422B12D169DE008C0628 /* Smokes_DataModel.xcdatamodel */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -149,11 +182,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C579A9B12D417FC00078ECD /* LogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C579A9D12D4181E00078ECD /* QuitterAppDelegateTestCases.m */,
+				7C64C58112DCC68500024505 /* SmokesTestCases.m */,
+			);
+			name = LogicTests;
+			sourceTree = "<group>";
+		};
 		7CE539B912D158E600B744A8 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7C579B0512D41DC000078ECD /* Smoke.h */,
+				7C579B0612D41DC000078ECD /* Smoke.m */,
+				7C579B0712D41DC000078ECD /* Smokes.h */,
+				7C579B0812D41DC000078ECD /* Smokes.m */,
 			);
 			name = Data;
+			path = Classes/Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +223,25 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* Quitter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7C579A9412D4159600078ECD /* LogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C579A9912D4159700078ECD /* Build configuration list for PBXNativeTarget "LogicTests" */;
+			buildPhases = (
+				7C579A9012D4159600078ECD /* Resources */,
+				7C579A9112D4159600078ECD /* Sources */,
+				7C579A9212D4159600078ECD /* Frameworks */,
+				7C579A9312D4159600078ECD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C579B5A12D4201100078ECD /* PBXTargetDependency */,
+			);
+			name = LogicTests;
+			productName = LogicTests;
+			productReference = 7C579A9512D4159600078ECD /* LogicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Quitter */,
+				7C579A9412D4159600078ECD /* LogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,7 +279,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C579A9012D4159600078ECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C64C60712DCCA6F00024505 /* Smokes.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C579A9312D4159600078ECD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -223,12 +314,33 @@
 				1D3623260D0F684500981E51 /* QuitterAppDelegate.m in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
 				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
-				7C68422C12D169DE008C0628 /* Smokes.xcdatamodel in Sources */,
-				7C68423312D16BC6008C0628 /* Smoke.m in Sources */,
+				7C68422C12D169DE008C0628 /* Smokes_DataModel.xcdatamodel in Sources */,
+				7C579B0912D41DC000078ECD /* Smoke.m in Sources */,
+				7C579B0A12D41DC000078ECD /* Smokes.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C579A9112D4159600078ECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C64C68C12DCE71100024505 /* Smokes_DataModel.xcdatamodel in Sources */,
+				7C64C63412DCCF7500024505 /* Smoke.m in Sources */,
+				7C64C60B12DCCA8900024505 /* Smokes.m in Sources */,
+				7C64C5FC12DCCA0900024505 /* SmokesTestCases.m in Sources */,
+				7C579AB712D4199B00078ECD /* QuitterAppDelegateTestCases.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C579B5A12D4201100078ECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* Quitter */;
+			targetProxy = 7C579B5912D4201100078ECD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -255,6 +367,59 @@
 				INFOPLIST_FILE = "Quitter-Info.plist";
 				PRODUCT_NAME = Quitter;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C579A9712D4159700078ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = /Developer/Library/Frameworks;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "LogicTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LogicTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7C579A9812D4159700078ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = /Developer/Library/Frameworks;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "LogicTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LogicTests;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -293,6 +458,15 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C579A9912D4159700078ECD /* Build configuration list for PBXNativeTarget "LogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C579A9712D4159700078ECD /* Debug */,
+				7C579A9812D4159700078ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

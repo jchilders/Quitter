@@ -13,9 +13,11 @@
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
 	NSDate *activeDate;
 	NSMutableArray *smokesArray;
+
+	IBOutlet UILabel *activeDateLabel;
 	IBOutlet UILabel *numSmokedLabel;
 	IBOutlet UILabel *motivationMessageLabel;
-	
+
 	NSManagedObjectContext *managedObjectContext;
 	CLLocationManager *locationManager;
 }
@@ -24,13 +26,22 @@
 - (IBAction)addAndShow:(id)sender;
 - (IBAction)subtractAndShow:(id)sender;
 
-- (NSArray *)getSmokesFor:(NSDate *)date;
+- (NSArray *)getTotalSmokesFor:(NSDate *)date;
+- (NSArray *)getSmokesForDateToCurrentTime:(NSDate *)date;
+- (NSArray *)smokesForDateRange:(NSDate *)fromDate toDate:(NSDate *)date;
+
 - (int)numSmoked;
 
-- (void)snowNumSmoked;
+- (void)showNumSmoked;
 - (void)showMotivationMessage;
 - (void)addSmoke;
 - (void)subtractSmoke;
+
+- (IBAction)showPreviousDay:(id)sender;
+- (IBAction)showNextDay:(id)sender;
+- (void)showViewForDay:(int)offset;
+- (void)showActiveDate;
+- (BOOL)activeDateIsToday;
 
 @property (nonatomic, retain) NSDate *activeDate;
 @property (nonatomic, retain) NSArray *smokesArray;

@@ -1,4 +1,4 @@
-// 
+//
 //  Smoke.m
 //  Quitter
 //
@@ -9,10 +9,13 @@
 #import "Smoke.h"
 
 
-@implementation Smoke 
+@implementation Smoke
 
-@dynamic latitude;
-@dynamic longitude;
-@dynamic timestamp;
+//@dynamic latitude;
+//@dynamic longitude;
+//@dynamic timestamp;
 
+@synthesize latitude;
+@synthesize longitude;
+@synthesize timestamp;
 @end
