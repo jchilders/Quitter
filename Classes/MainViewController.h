@@ -6,8 +6,10 @@
 //  Copyright 2011 Green Bar Consulting, LLC. All rights reserved.
 //
 
-#import <CoreLocation/CoreLocation.h>
 #import <CoreData/CoreData.h>
+#import <CoreLocation/CoreLocation.h>
+#import <QuartzCore/QuartzCore.h>
+
 #import "FlipsideViewController.h"
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
@@ -19,8 +21,11 @@
 	IBOutlet UILabel *motivationMessageLabel;
 
 	NSManagedObjectContext *managedObjectContext;
-	CLLocationManager *locationManager;
 }
+
+@property (nonatomic, retain) NSDate *activeDate;
+@property (nonatomic, retain) NSArray *smokesArray;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)showInfo:(id)sender;
 - (IBAction)addAndShow:(id)sender;
@@ -42,9 +47,6 @@
 - (void)showViewForDay:(int)offset;
 - (void)showActiveDate;
 - (BOOL)activeDateIsToday;
-
-@property (nonatomic, retain) NSDate *activeDate;
-@property (nonatomic, retain) NSArray *smokesArray;
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+- (void)becameActive;
 
 @end

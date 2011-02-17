@@ -28,7 +28,9 @@
 		7C64C68C12DCE71100024505 /* Smokes_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C68422B12D169DE008C0628 /* Smokes_DataModel.xcdatamodel */; };
 		7C68422C12D169DE008C0628 /* Smokes_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 7C68422B12D169DE008C0628 /* Smokes_DataModel.xcdatamodel */; };
 		7C68424512D16CB9008C0628 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C68424412D16CB9008C0628 /* CoreData.framework */; };
-		7C68425912D16F2D008C0628 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C68425812D16F2D008C0628 /* CoreLocation.framework */; };
+		7CD0D709130B1A7100FBA525 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD0D708130B1A7100FBA525 /* QuartzCore.framework */; };
+		7CD0D71B130B26D400FBA525 /* IncrementCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD0D71A130B26D400FBA525 /* IncrementCountView.m */; };
+		7CD0D76A130B2B2700FBA525 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C68425812D16F2D008C0628 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 		7C68422B12D169DE008C0628 /* Smokes_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Smokes_DataModel.xcdatamodel; sourceTree = "<group>"; };
 		7C68424412D16CB9008C0628 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7C68425812D16F2D008C0628 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7CD0D708130B1A7100FBA525 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7CD0D719130B26D400FBA525 /* IncrementCountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncrementCountView.h; sourceTree = "<group>"; };
+		7CD0D71A130B26D400FBA525 /* IncrementCountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncrementCountView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Quitter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Quitter-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +85,8 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
 				7C68424512D16CB9008C0628 /* CoreData.framework in Frameworks */,
-				7C68425912D16F2D008C0628 /* CoreLocation.framework in Frameworks */,
+				7CD0D709130B1A7100FBA525 /* QuartzCore.framework in Frameworks */,
+				7CD0D76A130B2B2700FBA525 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +134,8 @@
 			children = (
 				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
 				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
+				7CD0D719130B26D400FBA525 /* IncrementCountView.h */,
+				7CD0D71A130B26D400FBA525 /* IncrementCountView.m */,
 			);
 			name = "Main View";
 			sourceTree = "<group>";
@@ -145,6 +153,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				7C579A9612D4159600078ECD /* LogicTests-Info.plist */,
+				7CD0D708130B1A7100FBA525 /* QuartzCore.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -317,6 +326,7 @@
 				7C68422C12D169DE008C0628 /* Smokes_DataModel.xcdatamodel in Sources */,
 				7C579B0912D41DC000078ECD /* Smoke.m in Sources */,
 				7C579B0A12D41DC000078ECD /* Smokes.m in Sources */,
+				7CD0D71B130B26D400FBA525 /* IncrementCountView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

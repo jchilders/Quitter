@@ -6,15 +6,37 @@
 //  Copyright 2011 Green Bar Consulting, LLC. All rights reserved.
 //
 
+#import "IncrementCountView.h"
 #import "MainViewController.h"
 #import "Smoke.h"
 
 @implementation MainViewController
 
+@synthesize activeDate;
+@synthesize smokesArray;
+@synthesize managedObjectContext;
+
 const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
+- (id) init
+{
+	self = [super init];
+	if (self != nil) {
+		NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+		NSNumber *defNumInc = [NSNumber numberWithInteger:1];
+		NSDictionary *appDefaults = [NSDictionary dictionaryWithObject:defNumInc forKey:@"numIncrementOnLoad"];
+		[defaults registerDefaults:appDefaults];
+		
+		// This is to trigger the auto-increment when we 
+		// return from running in the background
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becameActive) name:UIApplicationDidBecomeActiveNotification object:nil];
+
+		DebugLog(@"Initialized MainViewController.");
+	}
+	return self;
+}
+
 - (void)viewDidLoad {
-	NSLog(@"viewDidLoad called.");
 	[super viewDidLoad];
 
 	NSDate *today = [NSDate date];
@@ -29,7 +51,6 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
 - (void)showNumSmoked
 {
-	NSLog(@"showNumSmokedToday called (%d)", [self numSmoked]);
 	NSString *str = [NSString stringWithFormat:@"%d", [self numSmoked]];
 	[numSmokedLabel setText:str];
 }
@@ -53,7 +74,6 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	NSDate *toDate = [gregorian dateByAddingComponents:toTimeComps toDate:fromDate options:0];
 
 	NSArray *results = [self smokesForDateRange:fromDate toDate:toDate];
-	NSLog(@"Found %d total smokes for date %@", [results count], date);
 
 	[gregorian release];
 
@@ -81,7 +101,6 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	NSDate *toDate = [gregorian dateFromComponents:toDateComps];
 
 	NSArray *results = [self smokesForDateRange:fromDate toDate:toDate];
-	NSLog(@"Found %d for date to current time from %@ to %@", [results count], fromDate, toDate);
 
 	[gregorian release];
 
@@ -90,6 +109,10 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
 - (NSArray *)smokesForDateRange:(NSDate *)fromDate toDate:(NSDate *)toDate
 {
+	if (!managedObjectContext) {
+		return [[NSMutableArray alloc] initWithCapacity:0];
+	}
+	
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(timestamp >= %@) and (timestamp <= %@)", fromDate, toDate];
 	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
 	[request setEntity:[NSEntityDescription entityForName:@"Smoke" inManagedObjectContext:managedObjectContext]];
@@ -109,51 +132,6 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	return results;
 }
 
-- (void)showMotivationMessage
-{
-	NSDate *priorDay = [activeDate dateByAddingTimeInterval:-kNSTimeIntervalOneDay];
-	NSArray *smokesPriorDayArray;
-	if ([self activeDateIsToday]) {
-		smokesPriorDayArray = [self getSmokesForDateToCurrentTime:priorDay];
-	} else {
-		smokesPriorDayArray = [self getTotalSmokesFor:priorDay];
-	}
-
-	NSLog(@"Num smoked %@: %d, %@: %d.", priorDay, [smokesPriorDayArray count], activeDate, [self numSmoked]);
-
-	NSString *msg;
-	if ([smokesPriorDayArray count] >= [self numSmoked]) {
-		if ([self activeDateIsToday]) {
-			msg = @"You are doing better today.";
-		} else {
-			msg = @"You did better than the day before.";
-		}
-	} else {
-		if ([self activeDateIsToday]) {
-			msg = @"You've had more today than yesterday.";
-		} else {
-			msg = @"You had more than the day before.";
-		}
-	}
-
-	[motivationMessageLabel setText:msg];
-}
-
-- (void)showActiveDate
-{
-	NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
-	[fmt setDateStyle:NSDateFormatterMediumStyle];
-
-	NSLocale *locale = [NSLocale currentLocale];
-	[fmt setLocale:locale];
-
-	NSString *str = [fmt stringFromDate:[self activeDate]];
-	NSLog(@"Active date: %s", str);
-	[activeDateLabel setText:str];
-
-	[fmt release];
-}
-
 - (BOOL)activeDateIsToday
 {
 	NSCalendar *cal = [NSCalendar currentCalendar];
@@ -167,23 +145,6 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	return isToday;
 }
 
-- (void)addSmoke
-{
-	NSLog(@"addSmoke called");
-	Smoke *smoke = (Smoke *)[NSEntityDescription insertNewObjectForEntityForName:@"Smoke"
-														  inManagedObjectContext:managedObjectContext];
-
-	[smoke setTimestamp:activeDate];
-
-	NSError *error = nil;
-	if (![managedObjectContext save:&error]) {
-		// Handle the error.
-		NSLog(@"An error occured saving this Smoke.");
-	}
-
-	[smokesArray addObject:smoke];
-}
-
 - (IBAction)addAndShow:(id)sender
 {
 	[self addSmoke];
@@ -191,31 +152,71 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	[self showMotivationMessage];
 }
 
-- (void)subtractSmoke
+- (void)addSmoke
 {
-	NSLog(@"subtractSmoke called");
-	if (smokesArray == nil || [smokesArray count] == 0) {
-		return;
-	}
+	Smoke *smoke = (Smoke *)[NSEntityDescription insertNewObjectForEntityForName:@"Smoke"
+														  inManagedObjectContext:managedObjectContext];
 
-	// Delete the managed object at the given index path.
-	NSManagedObject *smokeToDelete = [smokesArray lastObject];
-	[managedObjectContext deleteObject:smokeToDelete];
+	[smoke setTimestamp:activeDate];
 
-	// Commit the change.
 	NSError *error = nil;
 	if (![managedObjectContext save:&error]) {
-		NSLog(@"Error deleting Smoke.");
+		NSLog(@"An error occured saving this Smoke: %@", [error localizedDescription]);
 	}
 
-	[smokesArray removeLastObject];
+	[smokesArray addObject:smoke];
 }
 
-- (IBAction)subtractAndShow:(id)sender
+- (void)showActiveDate
 {
-	[self subtractSmoke];
-	[self showNumSmoked];
-	[self showMotivationMessage];
+	NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+	[fmt setDateStyle:NSDateFormatterMediumStyle];
+	
+	NSLocale *locale = [NSLocale currentLocale];
+	[fmt setLocale:locale];
+	
+	NSString *str = [fmt stringFromDate:[self activeDate]];
+	DebugLog(@"Active date is currently %@ for locale %@", str, [locale localeIdentifier]);
+	[activeDateLabel setText:str];
+	
+	[fmt release];
+}
+
+- (IBAction)showInfo:(id)sender {
+	
+	FlipsideViewController *controller = [[FlipsideViewController alloc] initWithNibName:@"FlipsideView" bundle:nil];
+	controller.delegate = self;
+	
+	controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+	
+	[self presentModalViewController:controller animated:YES];
+	
+	[controller release];
+}
+
+- (void)showMotivationMessage
+{
+	NSDate *priorDay = [activeDate dateByAddingTimeInterval:-kNSTimeIntervalOneDay];
+	NSArray *smokesPriorDayArray = [self getTotalSmokesFor:priorDay];
+	NSString *msg;
+
+	if ([self numSmoked] < [smokesPriorDayArray count]) {
+		if ([self activeDateIsToday]) {
+			msg = @"You are doing better today.";
+		} else {
+			msg = @"You did better than the day before.";
+		}
+	} else if ([self numSmoked] > [smokesPriorDayArray count]) {
+		if ([self activeDateIsToday]) {
+			msg = @"You've had more today than yesterday.";
+		} else {
+			msg = @"You had more than the day before.";
+		}
+	} else {
+		msg = @"";
+	}
+	
+	[motivationMessageLabel setText:msg];
 }
 
 - (IBAction)showPreviousDay:(id)sender
@@ -228,7 +229,7 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	[self showViewForDay:1];
 }
 
-// Offset is from activeDate. e.g. is activeDate is today,
+// Offset is from activeDate. e.g. if activeDate is today,
 // then -1 = yesterday, 0 = today, 1 = tomorrow
 - (void)showViewForDay:(int)offset
 {
@@ -249,24 +250,61 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	[offsetComponents release];
 }
 
+- (IBAction)subtractAndShow:(id)sender
+{
+	[self subtractSmoke];
+	[self showNumSmoked];
+	[self showMotivationMessage];
+}
+
+- (void)subtractSmoke
+{
+	if (smokesArray == nil || [smokesArray count] == 0) {
+		return;
+	}
+	
+	// Delete the managed object at the given index path.
+	NSManagedObject *smokeToDelete = [smokesArray lastObject];
+	[managedObjectContext deleteObject:smokeToDelete];
+	
+	// Commit the change.
+	NSError *error = nil;
+	if (![managedObjectContext save:&error]) {
+		NSLog(@"Error deleting Smoke: %@", [error localizedDescription]);
+	}
+	
+	[smokesArray removeLastObject];
+}
+
+- (void)becameActive {
+	NSInteger numIncrementOnLoad = [[NSUserDefaults standardUserDefaults] integerForKey:@"numIncrementOnLoad"];
+	DebugLog(@"numIncrementOnLoad: %d, activeDate: %@", numIncrementOnLoad, activeDate);
+	for (int i = 0; i < numIncrementOnLoad; i++) {
+		Smoke *smoke = (Smoke *)[NSEntityDescription insertNewObjectForEntityForName:@"Smoke"
+															  inManagedObjectContext:[self managedObjectContext]];
+		
+		[smoke setTimestamp:[NSDate date]];
+		
+		NSError *error = nil;
+		if (![[self managedObjectContext] save:&error]) {
+			NSLog(@"An error occured saving this Smoke: %@", [error localizedDescription]);
+		}		
+	}
+	
+	[self showViewForDay:0];
+	
+	CGRect wholeWindow = [[self view] bounds];
+	IncrementCountView *icView = [[IncrementCountView alloc] initWithFrame:wholeWindow];
+	[[self view] addSubview:icView];
+	[icView animate];
+	
+	[icView release];
+}
+
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
 
 	[self dismissModalViewControllerAnimated:YES];
 }
-
-
-- (IBAction)showInfo:(id)sender {
-
-	FlipsideViewController *controller = [[FlipsideViewController alloc] initWithNibName:@"FlipsideView" bundle:nil];
-	controller.delegate = self;
-
-	controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-
-	[self presentModalViewController:controller animated:YES];
-
-	[controller release];
-}
-
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -290,13 +328,9 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 - (void)dealloc {
 	[managedObjectContext release];
 	[smokesArray release];
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
 
     [super dealloc];
 }
-
-@synthesize activeDate;
-@synthesize smokesArray;
-@synthesize managedObjectContext;
-
 
 @end

@@ -6,30 +6,28 @@
 //  Copyright 2011 Green Bar Consulting, LLC. All rights reserved.
 //
 
+#import "IncrementCountView.h"
 #import "QuitterAppDelegate.h"
-#import "MainViewController.h"
+#import "Smoke.h"
 
 @implementation QuitterAppDelegate
 
-
 @synthesize window;
 @synthesize mainViewController;
-
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
+	MainViewController *vc = [[[MainViewController alloc] init] autorelease];
     NSManagedObjectContext *context = [self managedObjectContext];
     if (!context) {
-        // Handle the error.
+		NSLog(@"Error: Did not receive NSManagedObjectContext but expected to.");
     }
-    // Pass the managed object context to the view controller.
-    mainViewController.managedObjectContext = context;
-	
-    // Add the main view controller's view to the window and display.
-    [self.window addSubview:mainViewController.view];
+	vc.managedObjectContext = context;
+
+	[window setRootViewController:vc];
     [self.window makeKeyAndVisible];
 
     return YES;
@@ -58,11 +56,8 @@
      */
 }
 
-
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    /*
-     Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-     */
+
 }
 
 
@@ -75,7 +70,6 @@
 
 
 - (void)saveContext {
-    
     NSError *error = nil;
 	NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {
@@ -199,8 +193,7 @@
 	
 	[managedObjectContext_ release];
     [managedObjectModel_ release];
-    [persistentStoreCoordinator_ release];
-	
+    [persistentStoreCoordinator_ release];	
     [window release];
     [super dealloc];
 }

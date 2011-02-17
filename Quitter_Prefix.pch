@@ -13,3 +13,14 @@
     #import <UIKit/UIKit.h>
 	#import <CoreData/CoreData.h>
 #endif
+
+// Comment out the following to remove logging
+#define DEBUG
+
+#ifndef DebugLog
+#ifdef DEBUG
+#define DebugLog( s, ... ) NSLog( @"<%p %@: (%d)> %@", self, [[NSString stringWithUTF8String:__FUNCTION__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#else
+#define DebugLog( s, ...)
+#endif // DEBUG
+#endif // DebugLogs
