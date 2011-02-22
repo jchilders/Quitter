@@ -357,7 +357,7 @@
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>7CD0DAEB130DCB7A00FBA525</string>
+										<string>7CD0DB1313101EDF00FBA525</string>
 										<key>history</key>
 										<array>
 											<string>7C68423712D16BE3008C0628</string>
@@ -371,9 +371,9 @@
 											<string>7CD0D77E130B2B8700FBA525</string>
 											<string>7CD0D77F130B2B8700FBA525</string>
 											<string>7CD0D79D130B2D8000FBA525</string>
-											<string>7CD0D93C130DAE2800FBA525</string>
 											<string>7CD0D9C6130DB90C00FBA525</string>
-											<string>7CD0DA3E130DC75C00FBA525</string>
+											<string>7CD0DB0813101E9E00FBA525</string>
+											<string>7CD0DAF3130DCBF600FBA525</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -385,14 +385,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1215, 346}}</string>
+								<string>{{0, 0}, {1215, 776}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 52 1440 826 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>346pt</string>
+							<string>776pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -412,7 +412,7 @@
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>7CD0DAEC130DCB7A00FBA525</string>
+										<string>7CD0DB1413101EDF00FBA525</string>
 										<key>history</key>
 										<array>
 											<string>7C68423712D16BE3008C0628</string>
@@ -440,14 +440,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 351}, {1215, 430}}</string>
+								<string>{{0, 781}, {1215, 0}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 52 1440 826 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>430pt</string>
+							<string>0pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -611,7 +611,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>319671162.76265401</real>
+	<real>319823583.81721503</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>

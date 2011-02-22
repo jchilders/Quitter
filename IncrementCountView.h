@@ -11,11 +11,10 @@
 
 
 @interface IncrementCountView : UIView {
-	UIView *bigView;
+
 }
 
 - (void)animate;
 
-@property (nonatomic, retain) UIView *bigView;
 
 @end

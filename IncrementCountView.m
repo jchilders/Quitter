@@ -11,8 +11,6 @@
 
 @implementation IncrementCountView
 
-@synthesize bigView;
-
 - (id)initWithFrame:(CGRect)frame {
     
     self = [super initWithFrame:frame];
@@ -34,25 +32,20 @@
 		[view addSubview:label];
 		[self addSubview:view];
 		
-		self.bigView = view;
-		
 		[label release];
     }
     return self;
 }
 
 - (void)animate {
-	CGPoint ctr = [[self superview] center];
-	DebugLog(@"before center: %f/%f", ctr.x, ctr.y);
-
-	[UIView animateWithDuration:0.5 animations:^{		
+	[UIView animateWithDuration:0.5 animations:^{
+		// Following is necessary to keep it centered properly.
 		CGAffineTransform t0 = CGAffineTransformMakeTranslation(0, -40);
-		CGAffineTransform s0 = CGAffineTransformMakeScale(10, 10);
+		CGAffineTransform s0 = CGAffineTransformMakeScale(10, 10); // Scale it up 10x
 		self.transform = CGAffineTransformConcat(t0, s0);
 		
 		self.alpha = 0.0;
 	} completion:^(BOOL finished){
-		DebugLog(@"after center: %f/%f", self.center.x, self.center.y);
 		[self removeFromSuperview];
 	}];	
 }
