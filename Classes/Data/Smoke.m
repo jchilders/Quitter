@@ -11,11 +11,8 @@
 
 @implementation Smoke
 
-//@dynamic latitude;
-//@dynamic longitude;
-//@dynamic timestamp;
-
 @synthesize latitude;
 @synthesize longitude;
 @synthesize timestamp;
+
 @end

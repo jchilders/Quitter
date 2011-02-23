@@ -8,51 +8,29 @@
 
 #import "Smokes.h"
 
-
 @implementation Smokes
 
-- (id)initWithArray:(NSMutableArray *)smokes
-			forDate:(NSDate *)forDate
-{
+@synthesize managedObjectContext;
+@synthesize smokesArray;
+
+- (id)initWithManagedObjectContext:(NSManagedObjectContext *)ctx {
 	self = [super init];
-	if (self) {
-		smokesArray = smokes;
-
-		if (date != NULL) {
-			date = forDate;
-		} else {
-			date = [NSDate date];
-		}
-	}
-
+	self.managedObjectContext = ctx;
 	return self;
 }
 
-- (id)initWithDate:(NSDate *)forDate
-{
+- (id)initWithDate:(NSDate *)forDate {
 	return [self initWithArray:[[NSMutableArray alloc] init]
 					   forDate:forDate];
 }
 
-- (NSArray *)getSmokesFor:(NSDate *)forDate
-{
+- (NSArray *)getSmokesFor:(NSDate *)forDate {
 	return [[[NSMutableArray alloc] init] autorelease];
 }
 
-- (int)count
-{
-	return [smokesArray count];
-}
-
-- (void)dealloc
-{
+- (void)dealloc {
 	[smokesArray release];
-	[date release];
-
 	[super dealloc];
 }
-
-@synthesize smokesArray;
-@synthesize managedObjectContext;
 
 @end

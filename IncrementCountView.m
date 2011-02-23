@@ -24,14 +24,17 @@
 		
 		label.backgroundColor = [UIColor clearColor];
 		label.center = view.center;
-		label.font = font;		
-		label.text = @"+1";
+		label.font = font;
+
+		NSInteger numIncrementOnLoad = [[NSUserDefaults standardUserDefaults] integerForKey:@"numIncrementOnLoad"];
+		label.text = [NSString stringWithFormat:@"+%d", numIncrementOnLoad];
+
 		label.textAlignment = UITextAlignmentCenter;
 		label.textColor = [UIColor whiteColor];
 
 		[view addSubview:label];
 		[self addSubview:view];
-		
+
 		[label release];
     }
     return self;
@@ -43,7 +46,7 @@
 		CGAffineTransform t0 = CGAffineTransformMakeTranslation(0, -40);
 		CGAffineTransform s0 = CGAffineTransformMakeScale(10, 10); // Scale it up 10x
 		self.transform = CGAffineTransformConcat(t0, s0);
-		
+
 		self.alpha = 0.0;
 	} completion:^(BOOL finished){
 		[self removeFromSuperview];

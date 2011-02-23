@@ -6,6 +6,7 @@
 //  Copyright 2011 Green Bar Consulting, LLC. All rights reserved.
 //
 
+#import "HorizontalPickerView.h"
 #import "IncrementCountView.h"
 #import "MainViewController.h"
 #import "Smoke.h"
@@ -27,9 +28,11 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 		NSDictionary *appDefaults = [NSDictionary dictionaryWithObject:defNumInc forKey:@"numIncrementOnLoad"];
 		[defaults registerDefaults:appDefaults];
 		
-		// This is to trigger the auto-increment when we 
-		// return from running in the background
-		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becameActive) name:UIApplicationDidBecomeActiveNotification object:nil];
+		// Trigger auto-increment when returning from running in the background
+		[[NSNotificationCenter defaultCenter] addObserver:self
+												 selector:@selector(becameActive) 
+													 name:UIApplicationDidBecomeActiveNotification 
+												   object:nil];
 
 		DebugLog(@"Initialized MainViewController.");
 	}
@@ -42,6 +45,11 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	NSDate *today = [NSDate date];
 	[self setActiveDate:today];
 	[self showViewForDay:0];	// Offset 0 = today.
+
+	CGRect rect = CGRectMake(10, 10, 120, 80);
+	NSArray *labels = [[NSArray arrayWithObjects:@"aaaa", @"bbbb", @"cccc", nil] retain];
+	HorizontalPickerView *hpView = [[HorizontalPickerView alloc] initWithFrame:rect data:labels];
+	[self.view addSubview:hpView];
 }
 
 - (int)numSmoked

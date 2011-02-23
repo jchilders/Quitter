@@ -8,19 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface Smokes : NSObject {
-	NSDate *date;
-	NSMutableArray *smokesArray;
-
 	NSManagedObjectContext *managedObjectContext;
+	NSMutableArray *smokesArray;
 }
 
-- (id)initWithArray:(NSMutableArray *)smokes forDate:(NSDate *)forDate;
-- (id)initWithDate:(NSDate *)forDate;
+- (id)initWithManagedObjectContext:(NSManagedObjectContext *)ctx;
 
 - (NSArray *)getSmokesFor:(NSDate *)date;
-- (int) count;
 
 @property (nonatomic, retain) NSArray *smokesArray;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;

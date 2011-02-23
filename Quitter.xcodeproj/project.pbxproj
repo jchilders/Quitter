@@ -17,6 +17,7 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
+		7C506FBA13141D9B0023DA28 /* HorizontalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C506FB913141D9B0023DA28 /* HorizontalPickerView.m */; };
 		7C579AB712D4199B00078ECD /* QuitterAppDelegateTestCases.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C579A9D12D4181E00078ECD /* QuitterAppDelegateTestCases.m */; };
 		7C579B0912D41DC000078ECD /* Smoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C579B0612D41DC000078ECD /* Smoke.m */; };
 		7C579B0A12D41DC000078ECD /* Smokes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C579B0812D41DC000078ECD /* Smokes.m */; };
@@ -59,6 +60,8 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Quitter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quitter_Prefix.pch; sourceTree = "<group>"; };
+		7C506FB813141D9B0023DA28 /* HorizontalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalPickerView.h; sourceTree = "<group>"; };
+		7C506FB913141D9B0023DA28 /* HorizontalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalPickerView.m; sourceTree = "<group>"; };
 		7C579A9512D4159600078ECD /* LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C579A9612D4159600078ECD /* LogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTests-Info.plist"; sourceTree = "<group>"; };
 		7C579A9D12D4181E00078ECD /* QuitterAppDelegateTestCases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuitterAppDelegateTestCases.m; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
 				7CD0D719130B26D400FBA525 /* IncrementCountView.h */,
 				7CD0D71A130B26D400FBA525 /* IncrementCountView.m */,
+				7C506FB813141D9B0023DA28 /* HorizontalPickerView.h */,
+				7C506FB913141D9B0023DA28 /* HorizontalPickerView.m */,
 			);
 			name = "Main View";
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				7C579B0912D41DC000078ECD /* Smoke.m in Sources */,
 				7C579B0A12D41DC000078ECD /* Smokes.m in Sources */,
 				7CD0D71B130B26D400FBA525 /* IncrementCountView.m in Sources */,
+				7C506FBA13141D9B0023DA28 /* HorizontalPickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
