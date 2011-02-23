@@ -34,8 +34,6 @@
 
 - (void)showNumSmoked;
 - (void)showMotivationMessage;
-- (void)addSmoke;
-- (void)subtractSmoke;
 
 - (IBAction)showPreviousDay:(id)sender;
 - (IBAction)showNextDay:(id)sender;

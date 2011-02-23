@@ -52,6 +52,8 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	NSArray *labels = [[NSArray arrayWithObjects:@"aaaa", @"bbbb", @"cccc", nil] retain];
 	HorizontalPickerView *hpView = [[HorizontalPickerView alloc] initWithFrame:rect data:labels];
 	[self.view addSubview:hpView];
+	[labels release];
+	[hpView release];
 }
 
 - (int)numSmoked
@@ -78,14 +80,9 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
 - (IBAction)addAndShow:(id)sender
 {
-	[self addSmoke];
+	[smokes addSmokeForDate:self.activeDate];
 	[self showNumSmoked];
 	[self showMotivationMessage];
-}
-
-- (void)addSmoke
-{
-	[smokes addSmokeForDate:self.activeDate];
 }
 
 - (void)showActiveDate
@@ -172,14 +169,9 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
 - (IBAction)subtractAndShow:(id)sender
 {
-	[self subtractSmoke];
+	[smokes removeSmokeForDate:self.activeDate];
 	[self showNumSmoked];
 	[self showMotivationMessage];
-}
-
-- (void)subtractSmoke
-{
-	[smokes removeSmokeForDate:[self activeDate]];
 }
 
 - (void)becameActive {
