@@ -10,16 +10,16 @@
 #import "IncrementCountView.h"
 #import "MainViewController.h"
 #import "Smoke.h"
+#import "Smokes.h"
 
 @implementation MainViewController
 
 @synthesize activeDate;
-@synthesize smokesArray;
-@synthesize managedObjectContext;
+@synthesize smokes;
 
 const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
-- (id) init
+- (id) initWithManagedObjectContext:(NSManagedObjectContext *)ctx
 {
 	self = [super init];
 	if (self != nil) {
@@ -34,12 +34,14 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 													 name:UIApplicationDidBecomeActiveNotification 
 												   object:nil];
 
+		smokes = [[Smokes alloc] initWithManagedObjectContext:ctx];
 		DebugLog(@"Initialized MainViewController.");
 	}
 	return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
 	[super viewDidLoad];
 
 	NSDate *today = [NSDate date];
@@ -54,90 +56,13 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
 - (int)numSmoked
 {
-	return [smokesArray count];
+	return [[smokes smokesForDate:self.activeDate] count];
 }
 
 - (void)showNumSmoked
 {
 	NSString *str = [NSString stringWithFormat:@"%d", [self numSmoked]];
 	[numSmokedLabel setText:str];
-}
-
-- (NSArray *)getTotalSmokesFor:(NSDate *)date
-{
-	NSCalendar *cal = [NSCalendar currentCalendar];
-
-	// (date) at midnight, e.g.: this morning @ 12:00a local.
-	NSDateComponents *fromComps = [cal components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit
-									fromDate:date];
-	NSDate *fromDate = [cal dateFromComponents:fromComps]; // (date) at midnight, e.g.: this morning @ 12:00a.
-
-	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-	NSDateComponents *toTimeComps = [gregorian components:(NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:[NSDate date]];
-
-	[toTimeComps setHour:24];
-	[toTimeComps setMinute:0];
-	[toTimeComps setSecond:0];
-
-	NSDate *toDate = [gregorian dateByAddingComponents:toTimeComps toDate:fromDate options:0];
-
-	NSArray *results = [self smokesForDateRange:fromDate toDate:toDate];
-
-	[gregorian release];
-
-	return results;
-}
-
-- (NSArray *)getSmokesForDateToCurrentTime:(NSDate *)date
-{
-	NSCalendar *cal = [NSCalendar currentCalendar];
-
-	// (date) at midnight, e.g.: this morning @ 12:00a local.
-	NSDateComponents *fromComps = [cal components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit
-										 fromDate:date];
-	NSDate *fromDate = [cal dateFromComponents:fromComps]; // (date) at midnight, e.g.: this morning @ 12:00a.
-
-	// (date) @ current time, e.g.: today @ 4.58p.
-	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-	NSDateComponents *toDateComps = [gregorian components:(NSDayCalendarUnit | NSWeekdayCalendarUnit | NSYearCalendarUnit) fromDate:fromDate];
-	NSDateComponents *toTimeComps = [gregorian components:(NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit) fromDate:[NSDate date]];
-
-	[toDateComps setHour:[toTimeComps hour]];
-	[toDateComps setMinute:[toTimeComps minute]];
-	[toDateComps setSecond:[toTimeComps second]];
-
-	NSDate *toDate = [gregorian dateFromComponents:toDateComps];
-
-	NSArray *results = [self smokesForDateRange:fromDate toDate:toDate];
-
-	[gregorian release];
-
-	return results;
-}
-
-- (NSArray *)smokesForDateRange:(NSDate *)fromDate toDate:(NSDate *)toDate
-{
-	if (!managedObjectContext) {
-		return [[NSMutableArray alloc] initWithCapacity:0];
-	}
-	
-	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(timestamp >= %@) and (timestamp <= %@)", fromDate, toDate];
-	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
-	[request setEntity:[NSEntityDescription entityForName:@"Smoke" inManagedObjectContext:managedObjectContext]];
-	[request setPredicate:predicate];
-
-	// Sort descending by timestamp
-	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timestamp" ascending:NO];
-	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
-	[request setSortDescriptors:sortDescriptors];
-
-	NSError *error = nil;
-	NSMutableArray *results = [[[managedObjectContext executeFetchRequest:request error:&error] mutableCopy] autorelease];
-
-	[sortDescriptors release];
-	[sortDescriptor release];
-
-	return results;
 }
 
 - (BOOL)activeDateIsToday
@@ -148,9 +73,7 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	comps = [cal components:(NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit) fromDate:[NSDate date]];
 	NSDate *todayNormalized = [cal dateFromComponents:comps];
 
-	BOOL isToday = [todayNormalized isEqualToDate:activeDateNormalized];
-
-	return isToday;
+	return [todayNormalized isEqualToDate:activeDateNormalized];
 }
 
 - (IBAction)addAndShow:(id)sender
@@ -162,17 +85,7 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
 - (void)addSmoke
 {
-	Smoke *smoke = (Smoke *)[NSEntityDescription insertNewObjectForEntityForName:@"Smoke"
-														  inManagedObjectContext:managedObjectContext];
-
-	[smoke setTimestamp:activeDate];
-
-	NSError *error = nil;
-	if (![managedObjectContext save:&error]) {
-		NSLog(@"An error occured saving this Smoke: %@", [error localizedDescription]);
-	}
-
-	[smokesArray addObject:smoke];
+	[smokes addSmokeForDate:self.activeDate];
 }
 
 - (void)showActiveDate
@@ -205,7 +118,7 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 - (void)showMotivationMessage
 {
 	NSDate *priorDay = [activeDate dateByAddingTimeInterval:-kNSTimeIntervalOneDay];
-	NSArray *smokesPriorDayArray = [self getTotalSmokesFor:priorDay];
+	NSArray *smokesPriorDayArray = [smokes smokesForDate:priorDay];
 	NSString *msg;
 
 	if ([self numSmoked] < [smokesPriorDayArray count]) {
@@ -250,7 +163,6 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 	[self setActiveDate:newDay];
 	[self showActiveDate];
 
-	[self setSmokesArray:[self getTotalSmokesFor:[self activeDate]]];
 	[self showNumSmoked];
 	[self showMotivationMessage];
 
@@ -267,36 +179,14 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
 - (void)subtractSmoke
 {
-	if (smokesArray == nil || [smokesArray count] == 0) {
-		return;
-	}
-	
-	// Delete the managed object at the given index path.
-	NSManagedObject *smokeToDelete = [smokesArray lastObject];
-	[managedObjectContext deleteObject:smokeToDelete];
-	
-	// Commit the change.
-	NSError *error = nil;
-	if (![managedObjectContext save:&error]) {
-		NSLog(@"Error deleting Smoke: %@", [error localizedDescription]);
-	}
-	
-	[smokesArray removeLastObject];
+	[smokes removeSmokeForDate:[self activeDate]];
 }
 
 - (void)becameActive {
 	NSInteger numIncrementOnLoad = [[NSUserDefaults standardUserDefaults] integerForKey:@"numIncrementOnLoad"];
 	DebugLog(@"numIncrementOnLoad: %d, activeDate: %@", numIncrementOnLoad, activeDate);
 	for (int i = 0; i < numIncrementOnLoad; i++) {
-		Smoke *smoke = (Smoke *)[NSEntityDescription insertNewObjectForEntityForName:@"Smoke"
-															  inManagedObjectContext:[self managedObjectContext]];
-		
-		[smoke setTimestamp:[NSDate date]];
-		
-		NSError *error = nil;
-		if (![[self managedObjectContext] save:&error]) {
-			NSLog(@"An error occured saving this Smoke: %@", [error localizedDescription]);
-		}		
+		[smokes addSmokeForDate:self.activeDate];
 	}
 	
 	[self showViewForDay:0];
@@ -322,7 +212,7 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 }
 
 - (void)viewDidUnload {
-	self.smokesArray = nil;
+	self.smokes = nil;
 }
 
 /*
@@ -335,7 +225,7 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 
 - (void)dealloc {
 	[managedObjectContext release];
-	[smokesArray release];
+	[smokes release];
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 
     [super dealloc];

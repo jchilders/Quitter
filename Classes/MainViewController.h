@@ -11,10 +11,10 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "FlipsideViewController.h"
+#import "Smokes.h"
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
 	NSDate *activeDate;
-	NSMutableArray *smokesArray;
 
 	IBOutlet UILabel *activeDateLabel;
 	IBOutlet UILabel *numSmokedLabel;
@@ -24,16 +24,11 @@
 }
 
 @property (nonatomic, retain) NSDate *activeDate;
-@property (nonatomic, retain) NSArray *smokesArray;
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) Smokes *smokes;
 
 - (IBAction)showInfo:(id)sender;
 - (IBAction)addAndShow:(id)sender;
 - (IBAction)subtractAndShow:(id)sender;
-
-- (NSArray *)getTotalSmokesFor:(NSDate *)date;
-- (NSArray *)getSmokesForDateToCurrentTime:(NSDate *)date;
-- (NSArray *)smokesForDateRange:(NSDate *)fromDate toDate:(NSDate *)date;
 
 - (int)numSmoked;
 

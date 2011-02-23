@@ -10,13 +10,15 @@
 
 @interface Smokes : NSObject {
 	NSManagedObjectContext *managedObjectContext;
-	NSMutableArray *smokesArray;
 }
 
 - (id)initWithManagedObjectContext:(NSManagedObjectContext *)ctx;
 
-- (NSArray *)getSmokesFor:(NSDate *)date;
+- (BOOL)addSmokeForDate:(NSDate *)date;
+- (BOOL)removeSmokeForDate:(NSDate *)date;
+- (NSArray *)smokesForDateRange:(NSDate *)fromDate toDate:(NSDate *)toDate;
+- (NSArray *)smokesForDate:(NSDate *)date;
+- (BOOL)saveContext;
 
-@property (nonatomic, retain) NSArray *smokesArray;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @end

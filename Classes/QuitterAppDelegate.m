@@ -9,24 +9,19 @@
 #import "IncrementCountView.h"
 #import "QuitterAppDelegate.h"
 #import "Smoke.h"
+#import "Smokes.h"
 
 @implementation QuitterAppDelegate
 
 @synthesize window;
 @synthesize mainViewController;
+@synthesize smokes;
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-	MainViewController *vc = [[[MainViewController alloc] init] autorelease];
-    NSManagedObjectContext *context = [self managedObjectContext];
-    if (!context) {
-		NSLog(@"Error: Did not receive NSManagedObjectContext but expected to.");
-    }
-	vc.managedObjectContext = context;
-
+	MainViewController *vc = [[[MainViewController alloc] initWithManagedObjectContext:[self managedObjectContext]] autorelease];
 	[window setRootViewController:vc];
     [self.window makeKeyAndVisible];
 
