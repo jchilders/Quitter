@@ -216,7 +216,6 @@ const NSTimeInterval kNSTimeIntervalOneDay = 86400;
 */
 
 - (void)dealloc {
-	[managedObjectContext release];
 	[smokes release];
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 

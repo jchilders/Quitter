@@ -18,6 +18,7 @@
 - (BOOL)removeSmokeForDate:(NSDate *)date;
 - (NSArray *)smokesForDateRange:(NSDate *)fromDate toDate:(NSDate *)toDate;
 - (NSArray *)smokesForDate:(NSDate *)date;
+- (NSArray *)allSmokes;
 - (BOOL)saveContext;
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;

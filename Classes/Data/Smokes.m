@@ -62,7 +62,7 @@
 
 	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(timestamp >= %@) and (timestamp <= %@)", fromDate, toDate];
 	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
-	[request setEntity:[NSEntityDescription entityForName:@"Smoke" inManagedObjectContext:managedObjectContext]];
+	[request setEntity:[NSEntityDescription entityForName:@"Smoke" inManagedObjectContext:self.managedObjectContext]];
 	[request setPredicate:predicate];
 
 	// Sort descending by timestamp
@@ -76,6 +76,25 @@
 	[sortDescriptors release];
 	[sortDescriptor release];
 
+	return results;
+}
+
+- (NSArray *)allSmokes
+{
+	if (!managedObjectContext) {
+		return [[[NSMutableArray alloc] initWithCapacity:0] autorelease];
+	}
+	
+	NSFetchRequest *request = [[[NSFetchRequest alloc] init] autorelease];
+	[request setEntity:[NSEntityDescription entityForName:@"Smoke" inManagedObjectContext:self.managedObjectContext]];
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timestamp" ascending:NO];
+	NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+	NSError *error = nil;
+	NSMutableArray *results = [[[managedObjectContext executeFetchRequest:request error:&error] mutableCopy] autorelease];
+	
+	[sortDescriptors release];
+	[sortDescriptor release];
+	
 	return results;
 }
 
