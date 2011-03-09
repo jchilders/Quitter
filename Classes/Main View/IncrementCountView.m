@@ -27,7 +27,7 @@
 		label.font = font;
 
 		NSInteger numIncrementOnLoad = [[NSUserDefaults standardUserDefaults] integerForKey:@"numIncrementOnLoad"];
-		label.text = [NSString stringWithFormat:@"+%d", numIncrementOnLoad];
+		label.text = [NSString stringWithFormat:@"+%d", numIncrementOnLoad];    
 
 		label.textAlignment = UITextAlignmentCenter;
 		label.textColor = [UIColor whiteColor];
