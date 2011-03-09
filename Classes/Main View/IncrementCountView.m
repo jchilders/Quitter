@@ -12,7 +12,7 @@
 @implementation IncrementCountView
 
 - (id)initWithFrame:(CGRect)frame {
-    
+
     self = [super initWithFrame:frame];
     if (self) {
 		CGRect rect = [[UIScreen mainScreen] applicationFrame];
@@ -21,7 +21,7 @@
 
 		UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 150, 45)];
 		UIFont *font = [UIFont fontWithName:@"Arial" size:48.0];
-		
+
 		label.backgroundColor = [UIColor clearColor];
 		label.center = view.center;
 		label.font = font;
@@ -50,7 +50,7 @@
 		self.alpha = 0.0;
 	} completion:^(BOOL finished){
 		[self removeFromSuperview];
-	}];	
+	}];
 }
 
 /*
@@ -67,3 +67,4 @@
 
 
 @end
+
