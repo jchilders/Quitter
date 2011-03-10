@@ -27,7 +27,7 @@
 		label.font = font;
 
 		NSInteger numIncrementOnLoad = [[NSUserDefaults standardUserDefaults] integerForKey:@"numIncrementOnLoad"];
-		label.text = [NSString stringWithFormat:@"+%d", numIncrementOnLoad];          
+		label.text = [NSString stringWithFormat:@"+%d", numIncrementOnLoad];
 
 		label.textAlignment = UITextAlignmentCenter;
 		label.textColor = [UIColor whiteColor];
@@ -42,7 +42,7 @@
 
 - (void)animate {
 	[UIView animateWithDuration:0.5 animations:^{
-		// Following is necessary to keep it centered properly.
+		// Following is necessary to keep the exploding text properly centered.
 		CGAffineTransform t0 = CGAffineTransformMakeTranslation(0, -40);
 		CGAffineTransform s0 = CGAffineTransformMakeScale(10, 10); // Scale it up 10x
 		self.transform = CGAffineTransformConcat(t0, s0);

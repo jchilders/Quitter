@@ -44,7 +44,7 @@ const float KPComponentHeight = 40.0;
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
 	DebugLog(@"Called for label '%@'", [labels objectAtIndex:row]);
 	CGRect rect = CGRectMake(0, 0, KPComponentWidth, KPComponentHeight);
-	UILabel *label = [[UILabel alloc] initWithFrame:rect];
+	UILabel *label = [[[UILabel alloc] initWithFrame:rect] autorelease];
 
 	label.text = [labels objectAtIndex:row];
 	label.textAlignment = UITextAlignmentCenter;
